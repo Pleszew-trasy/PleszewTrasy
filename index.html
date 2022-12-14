@@ -1,22 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pleszew trasy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <label>Wybierz numer trasy: </label>
-    <select class="route">
-        <option value="1">1</option>
-        <option value="2">2</option>
-    </select>
-    <button class="buttonSubmit">Wybierz trasę</button><br>
-    <img src="img/funnyDog.jpg" alt="trasa" class="routeImage">
+    <div class="checkbox-dropdown">
+        Wybierz trasy
+        <ul class="checkbox-dropdown-list">
+            <li>
+                <label for="trasa2"><input type="checkbox" id="trasa2" name="trasa2" value="trasa2">Rodzinny z
+                    rowerem - Oferta 1 – „Mam wolne popołudnie”</label>
+            </li>
+            <li>
+                <label for="trasa3"><input type="checkbox" id="trasa3" name="trasa3" value="trasa3">Rodzinny z rowerem -
+                    Oferta 2 – „Trasa podmiejska”</label>
+            </li>
+            <li>
+                <label for="trasa4"><input type="checkbox" id="trasa4" name="trasa4" value="trasa4">
+                    Rodzinny z rowerem - Oferta 3 – „Planty dla wytrzymałych” </label>
+            </li>
+            <li>
+                <label for="trasa5"><input type="checkbox" id="trasa5" name="trasa5" value="trasa5">
+                    Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL1” </label>
+            </li>
+            <li>
+                <label for="trasa6"><input type="checkbox" id="trasa6" name="trasa6" value="trasa6">
+                    Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL2” </label>
+            </li>
+            <li>
+                <label for="trasa7"><input type="checkbox" id="trasa7" name="trasa7" value="trasa7">
+                    Rodzinny pieszo + przejazd kolejką</label>
+            </li>
+            <li>
+                <label for="trasa1"><input type="checkbox" id="trasa1" name="trasa1" value="trasa1">
+                    Młodzieżowy - Trasa 1 – Oferta wieczorowa</label>
+            </li>
+            <li><label for="trasa8"><input type="checkbox" id="trasa8" name="trasa8" value="trasa8">
+                    Młodzieżowy - Trasa 2 - Oferta sportowa</label></li>
+            <li>
+                <label for="trasa9"><input type="checkbox" id="trasa9" name="trasa9" value="trasa9">
+                    Turystyczny - weekend w Pleszewie - dzień 1</label>
+            </li>
+            <li>
+                <label for="trasa10"><input type="checkbox" id="trasa10" name="trasa10" value="trasa10">
+                    Turystyczny - weekend w Pleszewie - dzień 2</label>
+            </li>
+        </ul>
+    </div>
+    <div class="imgContainer"><img src="img/kompaktowy-pleszew.png" alt="kompatkowy Pleszew"></div>
+    <!--<h1>Wybierz trasę:</h1>
+    <input type="checkbox" id="trasa2" name="trasa2" value="trasa2">
+    <label for="trasa2">Rodzinny z rowerem - Oferta 1 – „Mam wolne popołudnie”</label><br>
+    <input type="checkbox" id="trasa3" name="trasa3" value="trasa3">
+    <label for="trasa3">Rodzinny z rowerem - Oferta 2 – „Trasa podmiejska”</label><br>
+    <input type="checkbox" id="trasa4" name="trasa4" value="trasa4">
+    <label for="trasa4">Rodzinny z rowerem - Oferta 3 – „Planty dla wytrzymałych” </label><br>
+    <input type="checkbox" id="trasa5" name="trasa5" value="trasa5">
+    <label for="trasa5">Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL1” </label><br>
+    <input type="checkbox" id="trasa6" name="trasa6" value="trasa6">
+    <label for="trasa6">Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL2” </label><br>
+    <input type="checkbox" id="trasa7" name="trasa7" value="trasa7">
+    <label for="trasa7">Rodzinny pieszo + przejazd kolejką</label><br>
+    <input type="checkbox" id="trasa1" name="trasa1" value="trasa1">
+    <label for="trasa1">Młodzieżowy - Trasa 1 – Oferta wieczorowa</label><br>
+    <input type="checkbox" id="trasa8" name="trasa8" value="trasa8">
+    <label for="trasa8">Młodzieżowy - Trasa 2 - Oferta sportowa</label><br>
+    <input type="checkbox" id="trasa9" name="trasa9" value="trasa9">
+    <label for="trasa9">Turystyczny - weekend w Pleszewie - dzień 1</label><br>
+    <input type="checkbox" id="trasa10" name="trasa10" value="trasa10">
+    <label for="trasa10">Turystyczny - weekend w Pleszewie - dzień 2</label><br>-->
+    <div id="map"></div>
     <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6bGAAmXmtfAoBZIGVtNnLFF-CL13JE9g&callback=initMap"
+        defer></script>
+
 </body>
 
 </html>
