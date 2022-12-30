@@ -20,6 +20,25 @@ let flag8 = true;
 let flag9 = true;
 let flag10 = true;
 
+for (let i = 1; i <= 35; i++) {
+  eval(
+    "var markerCheckbox" +
+      i +
+      " = " +
+      'document.getElementById("' +
+      "marker" +
+      i +
+      '");'
+  );
+}
+
+for (let i = 1; i <= 35; i++) {
+  eval("var flagMarker" + i + " = true;");
+}
+
+const strokeWeight = 3;
+const familyColor = "#916996";
+
 function initMap() {
   const directionsService = new google.maps.DirectionsService();
   const directionsRenderer = new google.maps.DirectionsRenderer();
@@ -45,6 +64,87 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
     center: Pleszew,
+  });
+
+  directionsRenderer.setOptions({
+    polylineOptions: {
+      strokeColor: "red",
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer2.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+      strokeOpacity: 1.0,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer3.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer4.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer5.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer6.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer7.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer8.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer9.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer10.setOptions({
+    polylineOptions: {
+      strokeColor: familyColor,
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
   });
 
   directionsRenderer.setMap(map);
@@ -277,6 +377,718 @@ function initMap() {
       10
     );
   });
+
+  const marker1 = new google.maps.Marker({
+    position: { lat: 51.8960138469201, lng: 17.786460676606847 },
+    title: "Rynek",
+  });
+  const infowindow1 = new google.maps.InfoWindow({
+    content: "Rynek w Pleszewie",
+    ariaLabel: "Rynek",
+  });
+
+  markerCheckbox1.addEventListener("change", function () {
+    marker1.addListener("click", () => {
+      infowindow1.open({
+        anchor: marker1,
+        map,
+      });
+    });
+
+    flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+  });
+
+  const marker2 = new google.maps.Marker({
+    position: { lat: 51.895731389933964, lng: 17.78647662511584 },
+    title: "Urząd",
+  });
+  const infowindow2 = new google.maps.InfoWindow({
+    content: "Urząd miasta",
+    ariaLabel: "Urząd",
+  });
+
+  markerCheckbox2.addEventListener("change", function () {
+    marker2.addListener("click", () => {
+      infowindow2.open({
+        anchor: marker2,
+        map,
+      });
+    });
+
+    flagMarker2 = toggleMarker(marker2, map, flagMarker2);
+  });
+
+  const marker3 = new google.maps.Marker({
+    position: { lat: 51.89641963899831, lng: 17.78619468124088 },
+    title: "Hotel",
+  });
+  const infowindow3 = new google.maps.InfoWindow({
+    content: "Hotel",
+    ariaLabel: "Hotel",
+  });
+
+  markerCheckbox3.addEventListener("change", function () {
+    marker3.addListener("click", () => {
+      infowindow3.open({
+        anchor: marker3,
+        map,
+      });
+    });
+
+    flagMarker3 = toggleMarker(marker3, map, flagMarker3);
+  });
+
+  const marker4 = new google.maps.Marker({
+    position: { lat: 51.896373709229636, lng: 17.78475344231338 },
+    title: "Ulica Poznańska jako centrum Gastronomiczne",
+  });
+  const infowindow4 = new google.maps.InfoWindow({
+    content: "Ulica Poznańska jako centrum Gastronomiczne",
+    ariaLabel: "Poznańska",
+  });
+
+  markerCheckbox4.addEventListener("change", function () {
+    marker4.addListener("click", () => {
+      infowindow4.open({
+        anchor: marker4,
+        map,
+      });
+    });
+
+    flagMarker4 = toggleMarker(marker4, map, flagMarker4);
+  });
+
+  const marker5 = new google.maps.Marker({
+    position: { lat: 51.89685829625867, lng: 17.780760076362544 },
+    title: "Kino Hel",
+  });
+  const infowindow5 = new google.maps.InfoWindow({
+    content: "Kino Hel",
+    ariaLabel: "Kino",
+  });
+
+  markerCheckbox5.addEventListener("change", function () {
+    marker5.addListener("click", () => {
+      infowindow5.open({
+        anchor: marker5,
+        map,
+      });
+    });
+
+    flagMarker5 = toggleMarker(marker5, map, flagMarker5);
+  });
+
+  const marker6 = new google.maps.Marker({
+    position: { lat: 51.895919792155844, lng: 17.78616691985445 },
+    title: "Lodziarnia",
+  });
+  const infowindow6 = new google.maps.InfoWindow({
+    content: "Lodziarnia",
+    ariaLabel: "Lodziarnia",
+  });
+
+  markerCheckbox6.addEventListener("change", function () {
+    marker6.addListener("click", () => {
+      infowindow6.open({
+        anchor: marker6,
+        map,
+      });
+    });
+
+    flagMarker6 = toggleMarker(marker6, map, flagMarker6);
+  });
+
+  const marker7 = new google.maps.Marker({
+    position: { lat: 51.89544097985568, lng: 17.78473886228255 },
+    title: "Kawiarnia",
+  });
+  const infowindow7 = new google.maps.InfoWindow({
+    content: "Kawiarnia",
+    ariaLabel: "Kawiarnia",
+  });
+
+  markerCheckbox7.addEventListener("change", function () {
+    marker7.addListener("click", () => {
+      infowindow7.open({
+        anchor: marker7,
+        map,
+      });
+    });
+
+    flagMarker7 = toggleMarker(marker7, map, flagMarker7);
+  });
+
+  const marker8 = new google.maps.Marker({
+    position: { lat: 51.89543161425292, lng: 17.787234332877592 },
+    title: "Pub Piwnica",
+  });
+  const infowindow8 = new google.maps.InfoWindow({
+    content: "Pub Piwnica",
+    ariaLabel: "Pub Piwnica",
+  });
+
+  markerCheckbox8.addEventListener("change", function () {
+    marker8.addListener("click", () => {
+      infowindow8.open({
+        anchor: marker8,
+        map,
+      });
+    });
+
+    flagMarker8 = toggleMarker(marker8, map, flagMarker8);
+  });
+
+  const marker9 = new google.maps.Marker({
+    position: { lat: 51.89535820187878, lng: 17.78911227430774 },
+    title: "Pączkownia",
+  });
+  const infowindow9 = new google.maps.InfoWindow({
+    content: "Pączkownia",
+    ariaLabel: "Pączkownia",
+  });
+
+  markerCheckbox9.addEventListener("change", function () {
+    marker9.addListener("click", () => {
+      infowindow9.open({
+        anchor: marker9,
+        map,
+      });
+    });
+
+    flagMarker9 = toggleMarker(marker9, map, flagMarker9);
+  });
+
+  const marker10 = new google.maps.Marker({
+    position: { lat: 51.894350952936705, lng: 17.782599826472836 },
+    title: "Park Miejski",
+  });
+  const infowindow10 = new google.maps.InfoWindow({
+    content: "Park Miejski",
+    ariaLabel: "Park Miejski",
+  });
+
+  markerCheckbox10.addEventListener("change", function () {
+    marker10.addListener("click", () => {
+      infowindow10.open({
+        anchor: marker10,
+        map,
+      });
+    });
+
+    flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+  });
+
+  const marker11 = new google.maps.Marker({
+    position: { lat: 51.894459029286494, lng: 17.78255399350101 },
+    title: "Staw",
+  });
+  const infowindow11 = new google.maps.InfoWindow({
+    content: "Staw",
+    ariaLabel: "Staw",
+  });
+
+  markerCheckbox11.addEventListener("change", function () {
+    marker11.addListener("click", () => {
+      infowindow11.open({
+        anchor: marker11,
+        map,
+      });
+    });
+
+    flagMarker11 = toggleMarker(marker11, map, flagMarker11);
+  });
+
+  const marker12 = new google.maps.Marker({
+    position: { lat: 51.894052503653576, lng: 17.782989497853862 },
+    title: "Plac Zabaw Park Miejski",
+  });
+  const infowindow12 = new google.maps.InfoWindow({
+    content: "Plac Zabaw Park Miejski",
+    ariaLabel: "Plac Zabaw Park Miejski",
+  });
+
+  markerCheckbox12.addEventListener("change", function () {
+    marker12.addListener("click", () => {
+      infowindow12.open({
+        anchor: marker12,
+        map,
+      });
+    });
+
+    flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+  });
+
+  const marker13 = new google.maps.Marker({
+    position: { lat: 51.905758839365554, lng: 17.784867341856806 },
+    title: "Plac Zabaw Osiedle Wokół Wieży",
+  });
+  const infowindow13 = new google.maps.InfoWindow({
+    content: "Plac Zabaw Osiedle Wokół Wieży",
+    ariaLabel: "Plac Zabaw Osiedle Wokół Wieży",
+  });
+
+  markerCheckbox13.addEventListener("change", function () {
+    marker13.addListener("click", () => {
+      infowindow13.open({
+        anchor: marker13,
+        map,
+      });
+    });
+
+    flagMarker13 = toggleMarker(marker13, map, flagMarker13);
+  });
+
+  const marker14 = new google.maps.Marker({
+    position: { lat: 51.886986499318375, lng: 17.779304675891606 },
+    title: "Plac Zabaw Ulica Krzywoustego",
+  });
+  const infowindow14 = new google.maps.InfoWindow({
+    content: "Plac Zabaw Ulica Krzywoustego",
+    ariaLabel: "Plac Zabaw Ulica Krzywoustego",
+  });
+
+  markerCheckbox14.addEventListener("change", function () {
+    marker14.addListener("click", () => {
+      infowindow14.open({
+        anchor: marker14,
+        map,
+      });
+    });
+
+    flagMarker14 = toggleMarker(marker14, map, flagMarker14);
+  });
+
+  const marker15 = new google.maps.Marker({
+    position: { lat: 51.88706872096141, lng: 17.78131133470587 },
+    title: "Plac Zabaw „Małpi Gaj",
+  });
+  const infowindow15 = new google.maps.InfoWindow({
+    content: "Plac Zabaw „Małpi Gaj",
+    ariaLabel: "Plac Zabaw „Małpi Gaj",
+  });
+
+  markerCheckbox15.addEventListener("change", function () {
+    marker15.addListener("click", () => {
+      infowindow15.open({
+        anchor: marker15,
+        map,
+      });
+    });
+
+    flagMarker15 = toggleMarker(marker15, map, flagMarker15);
+  });
+
+  const marker16 = new google.maps.Marker({
+    position: { lat: 51.89610215912502, lng: 17.788425699322378 },
+    title: "Kościół pw. Ścięcia Jana Chrzciciela przy Rynku",
+  });
+  const infowindow16 = new google.maps.InfoWindow({
+    content: "Kościół pw. Ścięcia Jana Chrzciciela przy Rynku",
+    ariaLabel: "Kościół pw. Ścięcia Jana Chrzciciela przy Rynku",
+  });
+
+  markerCheckbox16.addEventListener("change", function () {
+    marker16.addListener("click", () => {
+      infowindow16.open({
+        anchor: marker16,
+        map,
+      });
+    });
+
+    flagMarker16 = toggleMarker(marker16, map, flagMarker16);
+  });
+
+  const marker17 = new google.maps.Marker({
+    position: { lat: 51.897705248450414, lng: 17.776018985754032 },
+    title: "Kościół Świętego Floriana",
+  });
+  const infowindow17 = new google.maps.InfoWindow({
+    content: "Kościół Świętego Floriana",
+    ariaLabel: "Kościół Świętego Floriana",
+  });
+
+  markerCheckbox17.addEventListener("change", function () {
+    marker17.addListener("click", () => {
+      infowindow17.open({
+        anchor: marker17,
+        map,
+      });
+    });
+
+    flagMarker17 = toggleMarker(marker17, map, flagMarker17);
+  });
+
+  const marker18 = new google.maps.Marker({
+    position: { lat: 51.88436907711972, lng: 17.788731451356444 },
+    title: "OSiR Pleszew",
+  });
+  const infowindow18 = new google.maps.InfoWindow({
+    content: "OSiR Pleszew",
+    ariaLabel: "OSiR Pleszew",
+  });
+
+  markerCheckbox18.addEventListener("change", function () {
+    marker18.addListener("click", () => {
+      infowindow18.open({
+        anchor: marker18,
+        map,
+      });
+    });
+
+    flagMarker18 = toggleMarker(marker18, map, flagMarker18);
+  });
+
+  const marker19 = new google.maps.Marker({
+    position: { lat: 51.88399468980463, lng: 17.793311634965605 },
+    title: "Amfiteatr",
+  });
+  const infowindow19 = new google.maps.InfoWindow({
+    content: "Amfiteatr",
+    ariaLabel: "Amfiteatr",
+  });
+
+  markerCheckbox19.addEventListener("change", function () {
+    marker19.addListener("click", () => {
+      infowindow19.open({
+        anchor: marker19,
+        map,
+      });
+    });
+
+    flagMarker19 = toggleMarker(marker19, map, flagMarker19);
+  });
+
+  const marker20 = new google.maps.Marker({
+    position: { lat: 51.89732801437519, lng: 17.787038887959763 },
+    title: "Muzeum Piekarnictwa",
+  });
+  const infowindow20 = new google.maps.InfoWindow({
+    content: "Muzeum Piekarnictwa",
+    ariaLabel: "Muzeum Piekarnictwa",
+  });
+
+  markerCheckbox20.addEventListener("change", function () {
+    marker20.addListener("click", () => {
+      infowindow20.open({
+        anchor: marker20,
+        map,
+      });
+    });
+
+    flagMarker20 = toggleMarker(marker20, map, flagMarker20);
+  });
+
+  const marker21 = new google.maps.Marker({
+    position: { lat: 51.89797447289455, lng: 17.78962489882941 },
+    title: "Muzeum Szewstwa",
+  });
+  const infowindow21 = new google.maps.InfoWindow({
+    content: "Muzeum Szewstwa",
+    ariaLabel: "Muzeum Szewstwa",
+  });
+
+  markerCheckbox21.addEventListener("change", function () {
+    marker21.addListener("click", () => {
+      infowindow21.open({
+        anchor: marker21,
+        map,
+      });
+    });
+
+    flagMarker21 = toggleMarker(marker21, map, flagMarker21);
+  });
+
+  const marker22 = new google.maps.Marker({
+    position: { lat: 51.886668068668264, lng: 17.782766621063693 },
+    title: "Muzeum Rzemiosła",
+  });
+  const infowindow22 = new google.maps.InfoWindow({
+    content: "Muzeum Rzemiosła",
+    ariaLabel: "Muzeum Rzemiosła",
+  });
+
+  markerCheckbox22.addEventListener("change", function () {
+    marker22.addListener("click", () => {
+      infowindow22.open({
+        anchor: marker22,
+        map,
+      });
+    });
+
+    flagMarker22 = toggleMarker(marker22, map, flagMarker22);
+  });
+
+  const marker23 = new google.maps.Marker({
+    position: { lat: 51.88423002633104, lng: 17.78806110157781 },
+    title: "Skatepark",
+  });
+  const infowindow23 = new google.maps.InfoWindow({
+    content: "Skatepark",
+    ariaLabel: "Skatepark",
+  });
+
+  markerCheckbox23.addEventListener("change", function () {
+    marker23.addListener("click", () => {
+      infowindow23.open({
+        anchor: marker23,
+        map,
+      });
+    });
+
+    flagMarker23 = toggleMarker(marker23, map, flagMarker23);
+  });
+
+  const marker24 = new google.maps.Marker({
+    position: { lat: 51.88492998220363, lng: 17.78832452031398 },
+    title: "Kort tenisowy",
+  });
+  const infowindow24 = new google.maps.InfoWindow({
+    content: "Kort tenisowy",
+    ariaLabel: "Kort tenisowy",
+  });
+
+  markerCheckbox24.addEventListener("change", function () {
+    marker24.addListener("click", () => {
+      infowindow24.open({
+        anchor: marker24,
+        map,
+      });
+    });
+
+    flagMarker24 = toggleMarker(marker24, map, flagMarker24);
+  });
+
+  const marker25 = new google.maps.Marker({
+    position: { lat: 51.884563128791655, lng: 17.789674672144596 },
+    title: "Stadion Miejski",
+  });
+  const infowindow25 = new google.maps.InfoWindow({
+    content: "Stadion Miejski",
+    ariaLabel: "Stadion Miejski",
+  });
+
+  markerCheckbox25.addEventListener("change", function () {
+    marker25.addListener("click", () => {
+      infowindow25.open({
+        anchor: marker25,
+        map,
+      });
+    });
+
+    flagMarker25 = toggleMarker(marker25, map, flagMarker25);
+  });
+
+  const marker26 = new google.maps.Marker({
+    position: { lat: 51.88313880639179, lng: 17.79337740094785 },
+    title: "Kręgielnia",
+  });
+  const infowindow26 = new google.maps.InfoWindow({
+    content: "Kręgielnia",
+    ariaLabel: "Kręgielnia",
+  });
+
+  markerCheckbox26.addEventListener("change", function () {
+    marker26.addListener("click", () => {
+      infowindow26.open({
+        anchor: marker26,
+        map,
+      });
+    });
+
+    flagMarker26 = toggleMarker(marker26, map, flagMarker26);
+  });
+
+  const marker27 = new google.maps.Marker({
+    position: { lat: 51.88349738540381, lng: 17.793273892830612 },
+    title: "Park wodny",
+  });
+  const infowindow27 = new google.maps.InfoWindow({
+    content: "Park wodny",
+    ariaLabel: "Park wodny",
+  });
+
+  markerCheckbox27.addEventListener("change", function () {
+    marker27.addListener("click", () => {
+      infowindow27.open({
+        anchor: marker27,
+        map,
+      });
+    });
+
+    flagMarker27 = toggleMarker(marker27, map, flagMarker27);
+  });
+
+  const marker28 = new google.maps.Marker({
+    position: { lat: 51.88338037261172, lng: 17.795546933758363 },
+    title: 'Park "Planty"',
+  });
+  const infowindow28 = new google.maps.InfoWindow({
+    content: 'Park "Planty"',
+    ariaLabel: 'Park "Planty"',
+  });
+
+  markerCheckbox28.addEventListener("change", function () {
+    marker28.addListener("click", () => {
+      infowindow28.open({
+        anchor: marker28,
+        map,
+      });
+    });
+
+    flagMarker28 = toggleMarker(marker28, map, flagMarker28);
+  });
+
+  const marker29 = new google.maps.Marker({
+    position: { lat: 51.89074856323925, lng: 17.784720162989718 },
+    title: "Zajezdnia Kultury",
+  });
+  const infowindow29 = new google.maps.InfoWindow({
+    content: "Zajezdnia Kultury",
+    ariaLabel: "Zajezdnia Kultury",
+  });
+
+  markerCheckbox29.addEventListener("change", function () {
+    marker29.addListener("click", () => {
+      infowindow29.open({
+        anchor: marker29,
+        map,
+      });
+    });
+
+    flagMarker29 = toggleMarker(marker29, map, flagMarker29);
+  });
+
+  const marker30 = new google.maps.Marker({
+    position: { lat: 51.89114790691487, lng: 17.78315956357188 },
+    title: "Kolejka Wąskotorowa",
+  });
+  const infowindow30 = new google.maps.InfoWindow({
+    content: "Kolejka Wąskotorowa",
+    ariaLabel: "Kolejka Wąskotorowa",
+  });
+
+  markerCheckbox30.addEventListener("change", function () {
+    marker30.addListener("click", () => {
+      infowindow30.open({
+        anchor: marker30,
+        map,
+      });
+    });
+
+    flagMarker30 = toggleMarker(marker30, map, flagMarker30);
+  });
+
+  const marker31 = new google.maps.Marker({
+    position: { lat: 51.891416720620214, lng: 17.78289172270069 },
+    title: "Zabytkowa Lokomotywa",
+  });
+  const infowindow31 = new google.maps.InfoWindow({
+    content: "Zabytkowa Lokomotywa",
+    ariaLabel: "Zabytkowa Lokomotywa",
+  });
+
+  markerCheckbox31.addEventListener("change", function () {
+    marker31.addListener("click", () => {
+      infowindow31.open({
+        anchor: marker31,
+        map,
+      });
+    });
+
+    flagMarker31 = toggleMarker(marker31, map, flagMarker31);
+  });
+
+  const marker32 = new google.maps.Marker({
+    position: { lat: 51.89287348221559, lng: 17.773658985542777 },
+    title: 'Miejsce Spotkań "nad Nerem"',
+  });
+  const infowindow32 = new google.maps.InfoWindow({
+    content: 'Miejsce Spotkań "nad Nerem"',
+    ariaLabel: 'Miejsce Spotkań "nad Nerem"',
+  });
+
+  markerCheckbox32.addEventListener("change", function () {
+    marker32.addListener("click", () => {
+      infowindow32.open({
+        anchor: marker32,
+        map,
+      });
+    });
+
+    flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+  });
+
+  const marker33 = new google.maps.Marker({
+    position: { lat: 51.888119784547264, lng: 17.728507185011676 },
+    title: "Pałac w Kowalewie",
+  });
+  const infowindow33 = new google.maps.InfoWindow({
+    content: "Pałac w Kowalewie",
+    ariaLabel: "Pałac w Kowalewie",
+  });
+
+  markerCheckbox33.addEventListener("change", function () {
+    marker33.addListener("click", () => {
+      infowindow33.open({
+        anchor: marker33,
+        map,
+      });
+    });
+
+    flagMarker33 = toggleMarker(marker33, map, flagMarker33);
+  });
+
+  const marker34 = new google.maps.Marker({
+    position: { lat: 51.88860694296506, lng: 17.764161976453096 },
+    title: "Boreczek",
+  });
+  const infowindow34 = new google.maps.InfoWindow({
+    content: "Boreczek",
+    ariaLabel: "Boreczek",
+  });
+
+  markerCheckbox34.addEventListener("change", function () {
+    marker34.addListener("click", () => {
+      infowindow34.open({
+        anchor: marker34,
+        map,
+      });
+    });
+
+    flagMarker34 = toggleMarker(marker34, map, flagMarker34);
+  });
+
+  const marker35 = new google.maps.Marker({
+    position: { lat: 51.891250647438476, lng: 17.783527436115193 },
+    title: "Stacja Kolejowa Pleszew",
+  });
+  const infowindow35 = new google.maps.InfoWindow({
+    content: "Stacja Kolejowa Pleszew",
+    ariaLabel: "Stacja Kolejowa Pleszew",
+  });
+
+  markerCheckbox35.addEventListener("change", function () {
+    marker35.addListener("click", () => {
+      infowindow35.open({
+        anchor: marker35,
+        map,
+      });
+    });
+
+    flagMarker35 = toggleMarker(marker35, map, flagMarker35);
+  });
+}
+
+function toggleMarker(marker, map, flag) {
+  if (flag === true) {
+    marker.setMap(map);
+    flag = !flag;
+    return flag;
+  } else if (flag === false) {
+    marker.setMap(null);
+    flag = !flag;
+    return flag;
+  }
 }
 
 function calculateRoute(
@@ -1182,13 +1994,27 @@ function calculateRoute(
 
 window.initMap = initMap;
 
-const checkboxDropDown = document.querySelector(".checkbox-dropdown");
-const checkboxDropDownUl = document.querySelector(".checkbox-dropdown-list");
+const checkboxesDropDown = document.querySelectorAll(".checkbox-dropdown");
+const checkboxesDropDownUl = document.querySelectorAll(
+  ".checkbox-dropdown-list"
+);
 
+checkboxesDropDown.forEach((checkbox) => {
+  checkbox.addEventListener("click", () => {
+    checkbox.classList.toggle("is-active");
+  });
+});
+
+checkboxesDropDownUl.forEach((checkbox) => {
+  checkbox.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+});
+/*
 checkboxDropDown.addEventListener("click", () => {
   checkboxDropDown.classList.toggle("is-active");
 });
 
 checkboxDropDownUl.addEventListener("click", (event) => {
   event.stopPropagation();
-});
+});*/

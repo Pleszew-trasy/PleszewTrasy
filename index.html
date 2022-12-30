@@ -10,74 +10,398 @@
 </head>
 
 <body>
-    <div class="checkbox-dropdown">
-        Wybierz trasy
-        <ul class="checkbox-dropdown-list">
-            <li>
-                <label for="trasa2"><input type="checkbox" id="trasa2" name="trasa2" value="trasa2">Rodzinny z
-                    rowerem - Oferta 1 – „Mam wolne popołudnie”</label>
-            </li>
-            <li>
-                <label for="trasa3"><input type="checkbox" id="trasa3" name="trasa3" value="trasa3">Rodzinny z rowerem -
-                    Oferta 2 – „Trasa podmiejska”</label>
-            </li>
-            <li>
-                <label for="trasa4"><input type="checkbox" id="trasa4" name="trasa4" value="trasa4">
-                    Rodzinny z rowerem - Oferta 3 – „Planty dla wytrzymałych” </label>
-            </li>
-            <li>
-                <label for="trasa5"><input type="checkbox" id="trasa5" name="trasa5" value="trasa5">
-                    Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL1” </label>
-            </li>
-            <li>
-                <label for="trasa6"><input type="checkbox" id="trasa6" name="trasa6" value="trasa6">
-                    Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL2” </label>
-            </li>
-            <li>
-                <label for="trasa7"><input type="checkbox" id="trasa7" name="trasa7" value="trasa7">
-                    Rodzinny pieszo + przejazd kolejką</label>
-            </li>
-            <li>
-                <label for="trasa1"><input type="checkbox" id="trasa1" name="trasa1" value="trasa1">
-                    Młodzieżowy - Trasa 1 – Oferta wieczorowa</label>
-            </li>
-            <li><label for="trasa8"><input type="checkbox" id="trasa8" name="trasa8" value="trasa8">
-                    Młodzieżowy - Trasa 2 - Oferta sportowa</label></li>
-            <li>
-                <label for="trasa9"><input type="checkbox" id="trasa9" name="trasa9" value="trasa9">
-                    Turystyczny - weekend w Pleszewie - dzień 1</label>
-            </li>
-            <li>
-                <label for="trasa10"><input type="checkbox" id="trasa10" name="trasa10" value="trasa10">
-                    Turystyczny - weekend w Pleszewie - dzień 2</label>
-            </li>
-        </ul>
+    <div class="imgContainer"><a href="https://pleszew.pl/" alt="Kompatkowy Pleszew" target="_blank"><img
+                src="img/kompaktowy-pleszew.png" alt="kompatkowy Pleszew" class="imgKompaktowyPleszew"></a></div>
+    <div class="wrap">
+        <!--<div class="checkbox-dropdown">
+            Wybierz trasy
+            <ul class="checkbox-dropdown-list">
+                <li>
+                    <label for="trasa2"><input type="checkbox" id="trasa2" name="trasa2" value="trasa2">Rodzinny z
+                        rowerem - Oferta 1 – „Mam wolne popołudnie”</label>
+                </li>
+                <li>
+                    <label for="trasa3"><input type="checkbox" id="trasa3" name="trasa3" value="trasa3">Rodzinny z
+                        rowerem -
+                        Oferta 2 – „Trasa podmiejska”</label>
+                </li>
+                <li>
+                    <label for="trasa4"><input type="checkbox" id="trasa4" name="trasa4" value="trasa4">
+                        Rodzinny z rowerem - Oferta 3 – „Planty dla wytrzymałych” </label>
+                </li>
+                <li>
+                    <label for="trasa5"><input type="checkbox" id="trasa5" name="trasa5" value="trasa5">
+                        Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL1” </label>
+                </li>
+                <li>
+                    <label for="trasa6"><input type="checkbox" id="trasa6" name="trasa6" value="trasa6">
+                        Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL2” </label>
+                </li>
+                <li>
+                    <label for="trasa7"><input type="checkbox" id="trasa7" name="trasa7" value="trasa7">
+                        Rodzinny pieszo + przejazd kolejką</label>
+                </li>
+                <li>
+                    <label for="trasa1"><input type="checkbox" id="trasa1" name="trasa1" value="trasa1">
+                        Młodzieżowy - Trasa 1 – Oferta wieczorowa</label>
+                </li>
+                <li><label for="trasa8"><input type="checkbox" id="trasa8" name="trasa8" value="trasa8">
+                        Młodzieżowy - Trasa 2 - Oferta sportowa</label></li>
+                <li>
+                    <label for="trasa9"><input type="checkbox" id="trasa9" name="trasa9" value="trasa9">
+                        Turystyczny - weekend w Pleszewie - dzień 1</label>
+                </li>
+                <li>
+                    <label for="trasa10"><input type="checkbox" id="trasa10" name="trasa10" value="trasa10">
+                        Turystyczny - weekend w Pleszewie - dzień 2</label>
+                </li>
+            </ul>
+        </div>-->
+        <div class="checkbox-dropdown">
+            Wybierz trasy
+            <ul class="checkbox-dropdown-list">
+                <li>
+                    <input type="checkbox" id="trasa2" name="trasa2" value="trasa2"><label for="trasa2">Rodzinny z
+                        rowerem - Oferta 1 – „Mam wolne popołudnie”</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa3" name="trasa3" value="trasa3"><label for="trasa3">Rodzinny z
+                        rowerem -
+                        Oferta 2 – „Trasa podmiejska”</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa4" name="trasa4" value="trasa4">
+                    <label for="trasa4"> Rodzinny z rowerem - Oferta 3 – „Planty dla wytrzymałych” </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa5" name="trasa5" value="trasa5">
+                    <label for="trasa5"> Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL1” </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa6" name="trasa6" value="trasa6">
+                    <label for="trasa6"> Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL2” </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa7" name="trasa7" value="trasa7">
+                    <label for="trasa7"> Rodzinny pieszo + przejazd kolejką</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa1" name="trasa1" value="trasa1">
+                    <label for="trasa1"> Młodzieżowy - Trasa 1 – Oferta wieczorowa</label>
+                </li>
+                <li><input type="checkbox" id="trasa8" name="trasa8" value="trasa8">
+                    <label for="trasa8"> Młodzieżowy - Trasa 2 - Oferta sportowa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa9" name="trasa9" value="trasa9">
+                    <label for="trasa9"> Turystyczny - weekend w Pleszewie - dzień 1</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="trasa10" name="trasa10" value="trasa10">
+                    <label for="trasa10"> Turystyczny - weekend w Pleszewie - dzień 2</label>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="checkbox-dropdown margin-input">
+            Wybierz punkty
+            <ul class="checkbox-dropdown-list">
+                <li>
+                    <label for="marker1"><input type="checkbox" id="marker1" name="marker1" value="Rynek">Rynek</label>
+                </li>
+                <li>
+                    <label for="marker2"><input type="checkbox" id="marker2" name="marker2" value="Urząd miasta">Urząd
+                        miasta</label>
+                </li>
+                <li>
+                    <label for="marker3"><input type="checkbox" id="marker3" name="marker3" value="Hotel">Hotel</label>
+                </li>
+                <li>
+                    <label for="marker4"><input type="checkbox" id="marker4" name="marker4"
+                            value="Ulica Poznańska jako centrum Gastronomiczne">Ulica Poznańska jako centrum
+                        Gastronomiczne</label>
+                </li>
+                <li>
+                    <label for="marker5"><input type="checkbox" id="marker5" name="marker5" value="Kino Hel">Kino
+                        Hel</label>
+                </li>
+                <li>
+                    <label for="marker6"><input type="checkbox" id="marker6" name="marker6"
+                            value="Lodziarnia">Lodziarnia</label>
+                </li>
+                <li>
+                    <label for="marker7"><input type="checkbox" id="marker7" name="marker7"
+                            value="Kawiarnia">Kawiarnia</label>
+                </li>
+                <li>
+                    <label for="marker8"><input type="checkbox" id="marker8" name="marker8" value="Pub Piwnica">Pub
+                        Piwnica</label>
+                </li>
+                <li>
+                    <label for="marker9"><input type="checkbox" id="marker9" name="marker9"
+                            value="Pączkownia">Pączkownia</label>
+                </li>
+                <li>
+                    <label for="marker10"><input type="checkbox" id="marker10" name="marker10" value="Park miejski">Park
+                        miejski</label>
+                </li>
+                <li>
+                    <label for="marker11"><input type="checkbox" id="marker11" name="marker11" value="Staw">Staw</label>
+                </li>
+                <li>
+                    <label for="marker12"><input type="checkbox" id="marker12" name="marker12"
+                            value="Plac Zabaw Park Miejski">Plac Zabaw Park Miejski</label>
+                </li>
+                <li>
+                    <label for="marker13"><input type="checkbox" id="marker13" name="marker13"
+                            value="Plac Zabaw Osiedle Wokół Wieży">Plac Zabaw Osiedle Wokół Wieży</label>
+                </li>
+                <li>
+                    <label for="marker14"><input type="checkbox" id="marker14" name="marker14"
+                            value="Plac Zabaw Ulica Krzywoustego">Plac Zabaw Ulica Krzywoustego</label>
+                </li>
+                <li>
+                    <label for="marker15"><input type="checkbox" id="marker15" name="marker15"
+                            value='Plac Zabaw "Małpi Gaj"'>Plac Zabaw "Małpi Gaj"</label>
+                </li>
+                <li>
+                    <label for="marker16"><input type="checkbox" id="marker16" name="marker16"
+                            value="Kościół pw. Ścięcia Jana Chrzciciela przy Rynku">Kościół pw. Ścięcia Jana Chrzciciela
+                        przy Rynku</label>
+                </li>
+                <li>
+                    <label for="marker17"><input type="checkbox" id="marker17" name="marker17"
+                            value="Kościół Świętego Floriana">Kościół Świętego Floriana</label>
+                </li>
+                <li>
+                    <label for="marker18"><input type="checkbox" id="marker18" name="marker18" value="OSiR Pleszew">OSiR
+                        Pleszew</label>
+                </li>
+                <li>
+                    <label for="marker19"><input type="checkbox" id="marker19" name="marker19"
+                            value="Amfiteatr">Amfiteatr</label>
+                </li>
+                <li>
+                    <label for="marker20"><input type="checkbox" id="marker20" name="marker20"
+                            value="Muzeum Piekarnictwa">Muzeum Piekarnictwa</label>
+                </li>
+                <li>
+                    <label for="marker21"><input type="checkbox" id="marker21" name="marker21"
+                            value="Muzeum Szewstwa">Muzeum Szewstwa</label>
+                </li>
+                <li>
+                    <label for="marker22"><input type="checkbox" id="marker22" name="marker22"
+                            value="Muzeum Rzemiosła">Muzeum Rzemiosła</label>
+                </li>
+                <li>
+                    <label for="marker23"><input type="checkbox" id="marker23" name="marker23"
+                            value="Skatepark">Skatepark</label>
+                </li>
+                <li>
+                    <label for="marker24"><input type="checkbox" id="marker24" name="marker24"
+                            value="Kort tenisowy">Kort
+                        tenisowy</label>
+                </li>
+                <li>
+                    <label for="marker25"><input type="checkbox" id="marker25" name="marker25"
+                            value="Stadion Miejski">Stadion Miejski</label>
+                </li>
+                <li>
+                    <label for="marker26"><input type="checkbox" id="marker26" name="marker26"
+                            value="Kręgielnia">Kręgielnia</label>
+                </li>
+                <li>
+                    <label for="marker27"><input type="checkbox" id="marker27" name="marker27" value="Park Wodny">Park
+                        Wodny</label>
+                </li>
+                <li>
+                    <label for="marker28"><input type="checkbox" id="marker28" name="marker28"
+                            value='Park "Planty"'>Park
+                        "Planty"</label>
+                </li>
+                <li>
+                    <label for="marker29"><input type="checkbox" id="marker29" name="marker29"
+                            value="Zajezdnia Kultury">Zajezdnia Kultury</label>
+                </li>
+                <li>
+                    <label for="marker30"><input type="checkbox" id="marker30" name="marker30"
+                            value="Kolejka Wąskotorowa">Kolejka Wąskotorowa</label>
+                </li>
+                <li>
+                    <label for="marker31"><input type="checkbox" id="marker31" name="marker31"
+                            value="Zabytkowa Lokomotywa">Zabytkowa Lokomotywa</label>
+                </li>
+                <li>
+                    <label for="marker32"><input type="checkbox" id="marker32" name="marker32"
+                            value='Miejsce Spotkań "nad Nerem"'>Miejsce Spotkań "nad Nerem"</label>
+                </li>
+                <li>
+                    <label for="marker33"><input type="checkbox" id="marker33" name="marker33"
+                            value="Pałac w Kowalewie">Pałac w Kowalewie</label>
+                </li>
+                <li>
+                    <label for="marker34"><input type="checkbox" id="marker34" name="marker34"
+                            value="Boreczek">Boreczek</label>
+                </li>
+                <li>
+                    <label for="marker35"><input type="checkbox" id="marker35" name="marker35"
+                            value="Stacja Kolejowa Pleszew">Stacja Kolejowa Pleszew</label>
+                </li>
+            </ul>
+        </div>-->
+
+        <div class="checkbox-dropdown margin-input">
+            Wybierz punkty
+            <ul class="checkbox-dropdown-list">
+                <li>
+                    <input type="checkbox" id="marker1" name="marker1" value="Rynek"><label for="marker1">Rynek</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker2" name="marker2" value="Urząd miasta"><label for="marker2">Urząd
+                        miasta</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker3" name="marker3" value="Hotel"><label for="marker3">Hotel</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker4" name="marker4"
+                        value="Ulica Poznańska jako centrum Gastronomiczne"><label for="marker4">Ulica Poznańska jako
+                        centrum
+                        Gastronomiczne</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker5" name="marker5" value="Kino Hel"><label for="marker5">Kino
+                        Hel</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker6" name="marker6" value="Lodziarnia"><label
+                        for="marker6">Lodziarnia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker7" name="marker7" value="Kawiarnia"><label
+                        for="marker7">Kawiarnia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker8" name="marker8" value="Pub Piwnica"><label for="marker8">Pub
+                        Piwnica</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker9" name="marker9" value="Pączkownia"><label
+                        for="marker9">Pączkownia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker10" name="marker10" value="Park miejski"><label for="marker10">Park
+                        miejski</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker11" name="marker11" value="Staw"><label for="marker11">Staw</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker12" name="marker12" value="Plac Zabaw Park Miejski"><label
+                        for="marker12">Plac Zabaw Park Miejski</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker13" name="marker13" value="Plac Zabaw Osiedle Wokół Wieży"> <label
+                        for="marker13">Plac Zabaw Osiedle Wokół Wieży</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker14" name="marker14" value="Plac Zabaw Ulica Krzywoustego"><label
+                        for="marker14">Plac Zabaw Ulica Krzywoustego</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker15" name="marker15" value='Plac Zabaw "Małpi Gaj"'><label
+                        for="marker15">Plac Zabaw "Małpi Gaj"</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker16" name="marker16"
+                        value="Kościół pw. Ścięcia Jana Chrzciciela przy Rynku"><label for="marker16">Kościół pw.
+                        Ścięcia Jana Chrzciciela
+                        przy Rynku</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker17" name="marker17" value="Kościół Świętego Floriana"><label
+                        for="marker17">Kościół Świętego Floriana</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker18" name="marker18" value="OSiR Pleszew"><label for="marker18">OSiR
+                        Pleszew</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker19" name="marker19" value="Amfiteatr"><label
+                        for="marker19">Amfiteatr</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker20" name="marker20" value="Muzeum Piekarnictwa"><label
+                        for="marker20">Muzeum Piekarnictwa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker21" name="marker21" value="Muzeum Szewstwa"><label
+                        for="marker21">Muzeum Szewstwa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker22" name="marker22" value="Muzeum Rzemiosła"><label
+                        for="marker22">Muzeum Rzemiosła</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker23" name="marker23" value="Skatepark"><label
+                        for="marker23">Skatepark</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker24" name="marker24" value="Kort tenisowy"><label
+                        for="marker24">Kort
+                        tenisowy</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker25" name="marker25" value="Stadion Miejski"><label
+                        for="marker25">Stadion Miejski</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker26" name="marker26" value="Kręgielnia"><label
+                        for="marker26">Kręgielnia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker27" name="marker27" value="Park Wodny"><label for="marker27">Park
+                        Wodny</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker28" name="marker28" value='Park "Planty"'><label
+                        for="marker28">Park
+                        "Planty"</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker29" name="marker29" value="Zajezdnia Kultury"><label
+                        for="marker29">Zajezdnia Kultury</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker30" name="marker30" value="Kolejka Wąskotorowa"><label
+                        for="marker30">Kolejka Wąskotorowa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker31" name="marker31" value="Zabytkowa Lokomotywa"><label
+                        for="marker31">Zabytkowa Lokomotywa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker32" name="marker32" value='Miejsce Spotkań "nad Nerem"'><label
+                        for="marker32">Miejsce Spotkań "nad Nerem"</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker33" name="marker33" value="Pałac w Kowalewie"><label
+                        for="marker33">Pałac w Kowalewie</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker34" name="marker34" value="Boreczek"><label
+                        for="marker34">Boreczek</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="marker35" name="marker35" value="Stacja Kolejowa Pleszew"><label
+                        for="marker35">Stacja Kolejowa Pleszew</label>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="imgContainer"><img src="img/kompaktowy-pleszew.png" alt="kompatkowy Pleszew"></div>
-    <!--<h1>Wybierz trasę:</h1>
-    <input type="checkbox" id="trasa2" name="trasa2" value="trasa2">
-    <label for="trasa2">Rodzinny z rowerem - Oferta 1 – „Mam wolne popołudnie”</label><br>
-    <input type="checkbox" id="trasa3" name="trasa3" value="trasa3">
-    <label for="trasa3">Rodzinny z rowerem - Oferta 2 – „Trasa podmiejska”</label><br>
-    <input type="checkbox" id="trasa4" name="trasa4" value="trasa4">
-    <label for="trasa4">Rodzinny z rowerem - Oferta 3 – „Planty dla wytrzymałych” </label><br>
-    <input type="checkbox" id="trasa5" name="trasa5" value="trasa5">
-    <label for="trasa5">Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL1” </label><br>
-    <input type="checkbox" id="trasa6" name="trasa6" value="trasa6">
-    <label for="trasa6">Rodzinny autobusem - Oferta typu "Do wyboru do koloru" – „PL2” </label><br>
-    <input type="checkbox" id="trasa7" name="trasa7" value="trasa7">
-    <label for="trasa7">Rodzinny pieszo + przejazd kolejką</label><br>
-    <input type="checkbox" id="trasa1" name="trasa1" value="trasa1">
-    <label for="trasa1">Młodzieżowy - Trasa 1 – Oferta wieczorowa</label><br>
-    <input type="checkbox" id="trasa8" name="trasa8" value="trasa8">
-    <label for="trasa8">Młodzieżowy - Trasa 2 - Oferta sportowa</label><br>
-    <input type="checkbox" id="trasa9" name="trasa9" value="trasa9">
-    <label for="trasa9">Turystyczny - weekend w Pleszewie - dzień 1</label><br>
-    <input type="checkbox" id="trasa10" name="trasa10" value="trasa10">
-    <label for="trasa10">Turystyczny - weekend w Pleszewie - dzień 2</label><br>-->
+
     <div id="map"></div>
     <script src="script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6bGAAmXmtfAoBZIGVtNnLFF-CL13JE9g&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXph2iF7RGADhEkwvk_VVIs50le0P3n54&callback=initMap"
         defer></script>
 
 </body>
