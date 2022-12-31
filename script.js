@@ -396,6 +396,7 @@ function initMap() {
     });
 
     flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+    map.panTo(marker1.getPosition());
   });
 
   const marker2 = new google.maps.Marker({
@@ -416,6 +417,7 @@ function initMap() {
     });
 
     flagMarker2 = toggleMarker(marker2, map, flagMarker2);
+    map.panTo(marker2.getPosition());
   });
 
   const marker3 = new google.maps.Marker({
@@ -436,6 +438,7 @@ function initMap() {
     });
 
     flagMarker3 = toggleMarker(marker3, map, flagMarker3);
+    map.panTo(marker3.getPosition());
   });
 
   const marker4 = new google.maps.Marker({
@@ -456,6 +459,7 @@ function initMap() {
     });
 
     flagMarker4 = toggleMarker(marker4, map, flagMarker4);
+    map.panTo(marker4.getPosition());
   });
 
   const marker5 = new google.maps.Marker({
@@ -476,6 +480,7 @@ function initMap() {
     });
 
     flagMarker5 = toggleMarker(marker5, map, flagMarker5);
+    map.panTo(marker5.getPosition());
   });
 
   const marker6 = new google.maps.Marker({
@@ -496,6 +501,7 @@ function initMap() {
     });
 
     flagMarker6 = toggleMarker(marker6, map, flagMarker6);
+    map.panTo(marker6.getPosition());
   });
 
   const marker7 = new google.maps.Marker({
@@ -516,6 +522,7 @@ function initMap() {
     });
 
     flagMarker7 = toggleMarker(marker7, map, flagMarker7);
+    map.panTo(marker7.getPosition());
   });
 
   const marker8 = new google.maps.Marker({
@@ -536,6 +543,7 @@ function initMap() {
     });
 
     flagMarker8 = toggleMarker(marker8, map, flagMarker8);
+    map.panTo(marker8.getPosition());
   });
 
   const marker9 = new google.maps.Marker({
@@ -556,6 +564,7 @@ function initMap() {
     });
 
     flagMarker9 = toggleMarker(marker9, map, flagMarker9);
+    map.panTo(marker9.getPosition());
   });
 
   const marker10 = new google.maps.Marker({
@@ -576,6 +585,7 @@ function initMap() {
     });
 
     flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+    map.panTo(marker10.getPosition());
   });
 
   const marker11 = new google.maps.Marker({
@@ -596,6 +606,7 @@ function initMap() {
     });
 
     flagMarker11 = toggleMarker(marker11, map, flagMarker11);
+    map.panTo(marker11.getPosition());
   });
 
   const marker12 = new google.maps.Marker({
@@ -616,6 +627,7 @@ function initMap() {
     });
 
     flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+    map.panTo(marker12.getPosition());
   });
 
   const marker13 = new google.maps.Marker({
@@ -636,6 +648,7 @@ function initMap() {
     });
 
     flagMarker13 = toggleMarker(marker13, map, flagMarker13);
+    map.panTo(marker13.getPosition());
   });
 
   const marker14 = new google.maps.Marker({
@@ -656,6 +669,7 @@ function initMap() {
     });
 
     flagMarker14 = toggleMarker(marker14, map, flagMarker14);
+    map.panTo(marker14.getPosition());
   });
 
   const marker15 = new google.maps.Marker({
@@ -676,6 +690,7 @@ function initMap() {
     });
 
     flagMarker15 = toggleMarker(marker15, map, flagMarker15);
+    map.panTo(marker15.getPosition());
   });
 
   const marker16 = new google.maps.Marker({
@@ -696,6 +711,7 @@ function initMap() {
     });
 
     flagMarker16 = toggleMarker(marker16, map, flagMarker16);
+    map.panTo(marker16.getPosition());
   });
 
   const marker17 = new google.maps.Marker({
@@ -716,6 +732,7 @@ function initMap() {
     });
 
     flagMarker17 = toggleMarker(marker17, map, flagMarker17);
+    map.panTo(marker17.getPosition());
   });
 
   const marker18 = new google.maps.Marker({
@@ -736,6 +753,7 @@ function initMap() {
     });
 
     flagMarker18 = toggleMarker(marker18, map, flagMarker18);
+    map.panTo(marker18.getPosition());
   });
 
   const marker19 = new google.maps.Marker({
@@ -756,6 +774,7 @@ function initMap() {
     });
 
     flagMarker19 = toggleMarker(marker19, map, flagMarker19);
+    map.panTo(marker19.getPosition());
   });
 
   const marker20 = new google.maps.Marker({
@@ -776,6 +795,7 @@ function initMap() {
     });
 
     flagMarker20 = toggleMarker(marker20, map, flagMarker20);
+    map.panTo(marker20.getPosition());
   });
 
   const marker21 = new google.maps.Marker({
@@ -796,6 +816,7 @@ function initMap() {
     });
 
     flagMarker21 = toggleMarker(marker21, map, flagMarker21);
+    map.panTo(marker21.getPosition());
   });
 
   const marker22 = new google.maps.Marker({
@@ -816,6 +837,7 @@ function initMap() {
     });
 
     flagMarker22 = toggleMarker(marker22, map, flagMarker22);
+    map.panTo(marker22.getPosition());
   });
 
   const marker23 = new google.maps.Marker({
@@ -836,6 +858,7 @@ function initMap() {
     });
 
     flagMarker23 = toggleMarker(marker23, map, flagMarker23);
+    map.panTo(marker23.getPosition());
   });
 
   const marker24 = new google.maps.Marker({
@@ -856,6 +879,7 @@ function initMap() {
     });
 
     flagMarker24 = toggleMarker(marker24, map, flagMarker24);
+    map.panTo(marker24.getPosition());
   });
 
   const marker25 = new google.maps.Marker({
@@ -876,6 +900,7 @@ function initMap() {
     });
 
     flagMarker25 = toggleMarker(marker25, map, flagMarker25);
+    map.panTo(marker25.getPosition());
   });
 
   const marker26 = new google.maps.Marker({
@@ -896,6 +921,7 @@ function initMap() {
     });
 
     flagMarker26 = toggleMarker(marker26, map, flagMarker26);
+    map.panTo(marker26.getPosition());
   });
 
   const marker27 = new google.maps.Marker({
@@ -916,6 +942,7 @@ function initMap() {
     });
 
     flagMarker27 = toggleMarker(marker27, map, flagMarker27);
+    map.panTo(marker27.getPosition());
   });
 
   const marker28 = new google.maps.Marker({
@@ -936,6 +963,7 @@ function initMap() {
     });
 
     flagMarker28 = toggleMarker(marker28, map, flagMarker28);
+    map.panTo(marker28.getPosition());
   });
 
   const marker29 = new google.maps.Marker({
@@ -956,6 +984,7 @@ function initMap() {
     });
 
     flagMarker29 = toggleMarker(marker29, map, flagMarker29);
+    map.panTo(marker29.getPosition());
   });
 
   const marker30 = new google.maps.Marker({
@@ -976,6 +1005,7 @@ function initMap() {
     });
 
     flagMarker30 = toggleMarker(marker30, map, flagMarker30);
+    map.panTo(marker30.getPosition());
   });
 
   const marker31 = new google.maps.Marker({
@@ -996,6 +1026,7 @@ function initMap() {
     });
 
     flagMarker31 = toggleMarker(marker31, map, flagMarker31);
+    map.panTo(marker31.getPosition());
   });
 
   const marker32 = new google.maps.Marker({
@@ -1016,6 +1047,7 @@ function initMap() {
     });
 
     flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+    map.panTo(marker32.getPosition());
   });
 
   const marker33 = new google.maps.Marker({
@@ -1036,6 +1068,7 @@ function initMap() {
     });
 
     flagMarker33 = toggleMarker(marker33, map, flagMarker33);
+    map.panTo(marker33.getPosition());
   });
 
   const marker34 = new google.maps.Marker({
@@ -1056,6 +1089,7 @@ function initMap() {
     });
 
     flagMarker34 = toggleMarker(marker34, map, flagMarker34);
+    map.panTo(marker34.getPosition());
   });
 
   const marker35 = new google.maps.Marker({
@@ -1076,6 +1110,7 @@ function initMap() {
     });
 
     flagMarker35 = toggleMarker(marker35, map, flagMarker35);
+    map.panTo(marker35.getPosition());
   });
 }
 
