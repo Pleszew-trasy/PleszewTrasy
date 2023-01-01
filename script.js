@@ -1002,6 +1002,9 @@ function initMap() {
   const marker27 = new google.maps.Marker({
     position: { lat: 51.88349738540381, lng: 17.793273892830612 },
     title: "Park wodny",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/swimming.png",
+    },
   });
   const infowindow27 = new google.maps.InfoWindow({
     content: "Park wodny",
