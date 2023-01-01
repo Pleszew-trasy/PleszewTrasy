@@ -60,6 +60,7 @@ function initMap() {
   const directionsRenderer9 = new google.maps.DirectionsRenderer();
   const directionsService10 = new google.maps.DirectionsService();
   const directionsRenderer10 = new google.maps.DirectionsRenderer();
+  console.log(directionsRenderer);
   const Pleszew = { lat: 51.897361, lng: 17.785614 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
@@ -78,7 +79,6 @@ function initMap() {
     polylineOptions: {
       strokeColor: familyColor,
       strokeWeight: strokeWeight,
-      strokeOpacity: 1.0,
     },
     suppressMarkers: true,
   });
@@ -381,6 +381,9 @@ function initMap() {
   const marker1 = new google.maps.Marker({
     position: { lat: 51.8960138469201, lng: 17.786460676606847 },
     title: "Rynek",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/picnic.png",
+    },
   });
   const infowindow1 = new google.maps.InfoWindow({
     content: "Rynek w Pleszewie",
@@ -402,6 +405,9 @@ function initMap() {
   const marker2 = new google.maps.Marker({
     position: { lat: 51.895731389933964, lng: 17.78647662511584 },
     title: "Urząd",
+    icon: {
+      url: "img/cityHall.png",
+    },
   });
   const infowindow2 = new google.maps.InfoWindow({
     content: "Urząd miasta",
@@ -423,6 +429,9 @@ function initMap() {
   const marker3 = new google.maps.Marker({
     position: { lat: 51.89641963899831, lng: 17.78619468124088 },
     title: "Hotel",
+    icon: {
+      url: "img/hotel.png",
+    },
   });
   const infowindow3 = new google.maps.InfoWindow({
     content: "Hotel",
@@ -465,6 +474,9 @@ function initMap() {
   const marker5 = new google.maps.Marker({
     position: { lat: 51.89685829625867, lng: 17.780760076362544 },
     title: "Kino Hel",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/movies.png",
+    },
   });
   const infowindow5 = new google.maps.InfoWindow({
     content: "Kino Hel",
@@ -486,6 +498,9 @@ function initMap() {
   const marker6 = new google.maps.Marker({
     position: { lat: 51.895919792155844, lng: 17.78616691985445 },
     title: "Lodziarnia",
+    icon: {
+      url: "img/iceCream.png",
+    },
   });
   const infowindow6 = new google.maps.InfoWindow({
     content: "Lodziarnia",
@@ -507,6 +522,9 @@ function initMap() {
   const marker7 = new google.maps.Marker({
     position: { lat: 51.89544097985568, lng: 17.78473886228255 },
     title: "Kawiarnia",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/coffeehouse.png",
+    },
   });
   const infowindow7 = new google.maps.InfoWindow({
     content: "Kawiarnia",
@@ -528,6 +546,9 @@ function initMap() {
   const marker8 = new google.maps.Marker({
     position: { lat: 51.89543161425292, lng: 17.787234332877592 },
     title: "Pub Piwnica",
+    icon: {
+      url: "img/pub.png",
+    },
   });
   const infowindow8 = new google.maps.InfoWindow({
     content: "Pub Piwnica",
@@ -549,6 +570,9 @@ function initMap() {
   const marker9 = new google.maps.Marker({
     position: { lat: 51.89535820187878, lng: 17.78911227430774 },
     title: "Pączkownia",
+    icon: {
+      url: "img/donut.png",
+    },
   });
   const infowindow9 = new google.maps.InfoWindow({
     content: "Pączkownia",
@@ -570,6 +594,9 @@ function initMap() {
   const marker10 = new google.maps.Marker({
     position: { lat: 51.894350952936705, lng: 17.782599826472836 },
     title: "Park Miejski",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/tree.png",
+    },
   });
   const infowindow10 = new google.maps.InfoWindow({
     content: "Park Miejski",
@@ -591,6 +618,9 @@ function initMap() {
   const marker11 = new google.maps.Marker({
     position: { lat: 51.894459029286494, lng: 17.78255399350101 },
     title: "Staw",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/water.png",
+    },
   });
   const infowindow11 = new google.maps.InfoWindow({
     content: "Staw",
@@ -612,6 +642,9 @@ function initMap() {
   const marker12 = new google.maps.Marker({
     position: { lat: 51.894052503653576, lng: 17.782989497853862 },
     title: "Plac Zabaw Park Miejski",
+    icon: {
+      url: "img/playground.png",
+    },
   });
   const infowindow12 = new google.maps.InfoWindow({
     content: "Plac Zabaw Park Miejski",
@@ -633,6 +666,9 @@ function initMap() {
   const marker13 = new google.maps.Marker({
     position: { lat: 51.905758839365554, lng: 17.784867341856806 },
     title: "Plac Zabaw Osiedle Wokół Wieży",
+    icon: {
+      url: "img/playground.png",
+    },
   });
   const infowindow13 = new google.maps.InfoWindow({
     content: "Plac Zabaw Osiedle Wokół Wieży",
@@ -654,6 +690,9 @@ function initMap() {
   const marker14 = new google.maps.Marker({
     position: { lat: 51.886986499318375, lng: 17.779304675891606 },
     title: "Plac Zabaw Ulica Krzywoustego",
+    icon: {
+      url: "img/playground.png",
+    },
   });
   const infowindow14 = new google.maps.InfoWindow({
     content: "Plac Zabaw Ulica Krzywoustego",
@@ -675,6 +714,9 @@ function initMap() {
   const marker15 = new google.maps.Marker({
     position: { lat: 51.88706872096141, lng: 17.78131133470587 },
     title: "Plac Zabaw „Małpi Gaj",
+    icon: {
+      url: "img/playground.png",
+    },
   });
   const infowindow15 = new google.maps.InfoWindow({
     content: "Plac Zabaw „Małpi Gaj",
@@ -696,6 +738,9 @@ function initMap() {
   const marker16 = new google.maps.Marker({
     position: { lat: 51.89610215912502, lng: 17.788425699322378 },
     title: "Kościół pw. Ścięcia Jana Chrzciciela przy Rynku",
+    icon: {
+      url: "img/church.png",
+    },
   });
   const infowindow16 = new google.maps.InfoWindow({
     content: "Kościół pw. Ścięcia Jana Chrzciciela przy Rynku",
@@ -717,6 +762,9 @@ function initMap() {
   const marker17 = new google.maps.Marker({
     position: { lat: 51.897705248450414, lng: 17.776018985754032 },
     title: "Kościół Świętego Floriana",
+    icon: {
+      url: "img/church.png",
+    },
   });
   const infowindow17 = new google.maps.InfoWindow({
     content: "Kościół Świętego Floriana",
@@ -738,6 +786,9 @@ function initMap() {
   const marker18 = new google.maps.Marker({
     position: { lat: 51.88436907711972, lng: 17.788731451356444 },
     title: "OSiR Pleszew",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/swimming.png",
+    },
   });
   const infowindow18 = new google.maps.InfoWindow({
     content: "OSiR Pleszew",
@@ -759,6 +810,9 @@ function initMap() {
   const marker19 = new google.maps.Marker({
     position: { lat: 51.88399468980463, lng: 17.793311634965605 },
     title: "Amfiteatr",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/arts.png",
+    },
   });
   const infowindow19 = new google.maps.InfoWindow({
     content: "Amfiteatr",
@@ -780,6 +834,9 @@ function initMap() {
   const marker20 = new google.maps.Marker({
     position: { lat: 51.89732801437519, lng: 17.787038887959763 },
     title: "Muzeum Piekarnictwa",
+    icon: {
+      url: "img/museum.png",
+    },
   });
   const infowindow20 = new google.maps.InfoWindow({
     content: "Muzeum Piekarnictwa",
@@ -801,6 +858,9 @@ function initMap() {
   const marker21 = new google.maps.Marker({
     position: { lat: 51.89797447289455, lng: 17.78962489882941 },
     title: "Muzeum Szewstwa",
+    icon: {
+      url: "img/museum.png",
+    },
   });
   const infowindow21 = new google.maps.InfoWindow({
     content: "Muzeum Szewstwa",
@@ -822,6 +882,9 @@ function initMap() {
   const marker22 = new google.maps.Marker({
     position: { lat: 51.886668068668264, lng: 17.782766621063693 },
     title: "Muzeum Rzemiosła",
+    icon: {
+      url: "img/museum.png",
+    },
   });
   const infowindow22 = new google.maps.InfoWindow({
     content: "Muzeum Rzemiosła",
@@ -843,6 +906,9 @@ function initMap() {
   const marker23 = new google.maps.Marker({
     position: { lat: 51.88423002633104, lng: 17.78806110157781 },
     title: "Skatepark",
+    icon: {
+      url: "img/skatepark.png",
+    },
   });
   const infowindow23 = new google.maps.InfoWindow({
     content: "Skatepark",
@@ -864,6 +930,9 @@ function initMap() {
   const marker24 = new google.maps.Marker({
     position: { lat: 51.88492998220363, lng: 17.78832452031398 },
     title: "Kort tenisowy",
+    icon: {
+      url: "img/tennis.png",
+    },
   });
   const infowindow24 = new google.maps.InfoWindow({
     content: "Kort tenisowy",
@@ -885,6 +954,9 @@ function initMap() {
   const marker25 = new google.maps.Marker({
     position: { lat: 51.884563128791655, lng: 17.789674672144596 },
     title: "Stadion Miejski",
+    icon: {
+      url: "img/stadium2.png",
+    },
   });
   const infowindow25 = new google.maps.InfoWindow({
     content: "Stadion Miejski",
@@ -906,6 +978,9 @@ function initMap() {
   const marker26 = new google.maps.Marker({
     position: { lat: 51.88313880639179, lng: 17.79337740094785 },
     title: "Kręgielnia",
+    icon: {
+      url: "img/bowling.png",
+    },
   });
   const infowindow26 = new google.maps.InfoWindow({
     content: "Kręgielnia",
@@ -931,6 +1006,9 @@ function initMap() {
   const infowindow27 = new google.maps.InfoWindow({
     content: "Park wodny",
     ariaLabel: "Park wodny",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/swimming.png",
+    },
   });
 
   markerCheckbox27.addEventListener("change", function () {
@@ -948,6 +1026,9 @@ function initMap() {
   const marker28 = new google.maps.Marker({
     position: { lat: 51.88338037261172, lng: 17.795546933758363 },
     title: 'Park "Planty"',
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/swimming.png",
+    },
   });
   const infowindow28 = new google.maps.InfoWindow({
     content: 'Park "Planty"',
@@ -969,6 +1050,9 @@ function initMap() {
   const marker29 = new google.maps.Marker({
     position: { lat: 51.89074856323925, lng: 17.784720162989718 },
     title: "Zajezdnia Kultury",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/arts.png",
+    },
   });
   const infowindow29 = new google.maps.InfoWindow({
     content: "Zajezdnia Kultury",
@@ -990,6 +1074,9 @@ function initMap() {
   const marker30 = new google.maps.Marker({
     position: { lat: 51.89114790691487, lng: 17.78315956357188 },
     title: "Kolejka Wąskotorowa",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/rail.png",
+    },
   });
   const infowindow30 = new google.maps.InfoWindow({
     content: "Kolejka Wąskotorowa",
@@ -1011,6 +1098,9 @@ function initMap() {
   const marker31 = new google.maps.Marker({
     position: { lat: 51.891416720620214, lng: 17.78289172270069 },
     title: "Zabytkowa Lokomotywa",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/rail.png",
+    },
   });
   const infowindow31 = new google.maps.InfoWindow({
     content: "Zabytkowa Lokomotywa",
@@ -1032,6 +1122,9 @@ function initMap() {
   const marker32 = new google.maps.Marker({
     position: { lat: 51.89287348221559, lng: 17.773658985542777 },
     title: 'Miejsce Spotkań "nad Nerem"',
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/picnic.png",
+    },
   });
   const infowindow32 = new google.maps.InfoWindow({
     content: 'Miejsce Spotkań "nad Nerem"',
@@ -1053,6 +1146,9 @@ function initMap() {
   const marker33 = new google.maps.Marker({
     position: { lat: 51.888119784547264, lng: 17.728507185011676 },
     title: "Pałac w Kowalewie",
+    icon: {
+      url: "img/palace.png",
+    },
   });
   const infowindow33 = new google.maps.InfoWindow({
     content: "Pałac w Kowalewie",
@@ -1074,6 +1170,9 @@ function initMap() {
   const marker34 = new google.maps.Marker({
     position: { lat: 51.88860694296506, lng: 17.764161976453096 },
     title: "Boreczek",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/tree.png",
+    },
   });
   const infowindow34 = new google.maps.InfoWindow({
     content: "Boreczek",
@@ -1095,6 +1194,9 @@ function initMap() {
   const marker35 = new google.maps.Marker({
     position: { lat: 51.891250647438476, lng: 17.783527436115193 },
     title: "Stacja Kolejowa Pleszew",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/rail.png",
+    },
   });
   const infowindow35 = new google.maps.InfoWindow({
     content: "Stacja Kolejowa Pleszew",
