@@ -9,6 +9,49 @@ const trasa8 = document.getElementById("trasa8");
 const trasa9 = document.getElementById("trasa9");
 const trasa10 = document.getElementById("trasa10");
 
+for (let i = 1; i <= 10; i++) {
+  eval(
+    "var liTrasa" +
+      i +
+      " = " +
+      'document.getElementById("' +
+      "liTrasa" +
+      i +
+      '");'
+  );
+}
+
+trasa1.addEventListener("click", function () {
+  liTrasa1.classList.toggle("liTrasa1Back");
+});
+trasa2.addEventListener("click", function () {
+  liTrasa2.classList.toggle("liTrasa2Back");
+});
+trasa3.addEventListener("click", function () {
+  liTrasa3.classList.toggle("liTrasa3Back");
+});
+trasa4.addEventListener("click", function () {
+  liTrasa4.classList.toggle("liTrasa4Back");
+});
+trasa5.addEventListener("click", function () {
+  liTrasa5.classList.toggle("liTrasa5Back");
+});
+trasa6.addEventListener("click", function () {
+  liTrasa6.classList.toggle("liTrasa6Back");
+});
+trasa7.addEventListener("click", function () {
+  liTrasa7.classList.toggle("liTrasa7Back");
+});
+trasa8.addEventListener("click", function () {
+  liTrasa8.classList.toggle("liTrasa8Back");
+});
+trasa9.addEventListener("click", function () {
+  liTrasa9.classList.toggle("liTrasa9Back");
+});
+trasa10.addEventListener("click", function () {
+  liTrasa10.classList.toggle("liTrasa10Back");
+});
+
 let flag = true;
 let flag2 = true;
 let flag3 = true;
@@ -69,7 +112,7 @@ function initMap() {
 
   directionsRenderer.setOptions({
     polylineOptions: {
-      strokeColor: "red",
+      strokeColor: "#d5edad",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -77,7 +120,7 @@ function initMap() {
 
   directionsRenderer2.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#d1adea",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -85,7 +128,7 @@ function initMap() {
 
   directionsRenderer3.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#c6c8fa",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -101,7 +144,7 @@ function initMap() {
 
   directionsRenderer5.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#af8b8c",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -109,7 +152,7 @@ function initMap() {
 
   directionsRenderer6.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#af8b8c",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -117,7 +160,7 @@ function initMap() {
 
   directionsRenderer7.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#916996",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -125,7 +168,7 @@ function initMap() {
 
   directionsRenderer8.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#a7cd69",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -133,7 +176,7 @@ function initMap() {
 
   directionsRenderer9.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#4388ab",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
@@ -141,7 +184,7 @@ function initMap() {
 
   directionsRenderer10.setOptions({
     polylineOptions: {
-      strokeColor: familyColor,
+      strokeColor: "#4388ab",
       strokeWeight: strokeWeight,
     },
     suppressMarkers: true,
