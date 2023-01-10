@@ -229,14 +229,23 @@ label input{
     width: 28vw;
     height: 14vh;
   }
+  .logo{
+    height: 14vh;
+  }
 }
 @media (max-width:950px) and (max-height:850px){
   .imgKompaktowyPleszew{
     height: 20vh;
   }
+  .logo{
+    height: 20vh;
+  }
 }
 @media (max-width:950px) and (max-height:600px){
   .imgKompaktowyPleszew{
+    height: 25vh;
+  }
+  .logo{
     height: 25vh;
   }
 }

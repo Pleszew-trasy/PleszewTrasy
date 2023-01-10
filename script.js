@@ -63,7 +63,7 @@ let flag8 = true;
 let flag9 = true;
 let flag10 = true;
 
-for (let i = 1; i <= 35; i++) {
+for (let i = 1; i <= 34; i++) {
   eval(
     "var markerCheckbox" +
       i +
@@ -75,8 +75,12 @@ for (let i = 1; i <= 35; i++) {
   );
 }
 
-for (let i = 1; i <= 35; i++) {
+for (let i = 1; i <= 34; i++) {
   eval("var flagMarker" + i + " = true;");
+}
+
+for (let i = 1; i <= 34; i++) {
+  eval("var flagCheckbox" + i + " = true;");
 }
 
 const strokeWeight = 3;
@@ -226,6 +230,75 @@ function initMap() {
       ],
       1
     );
+
+    if (
+      (flag == true && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag2 == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (flag == true && flagCheckbox8 == false) {
+    } else {
+      flagMarker8 = toggleMarker(marker8, map, flagMarker8);
+      map.panTo(marker8.getPosition());
+      marker8.addListener("click", () => {
+        infowindow8.open({
+          anchor: marker8,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag == true && flagCheckbox10 == false) ||
+      (flag3 == false && flagCheckbox10 == true) ||
+      (flag4 == false && flagCheckbox10 == true) ||
+      (flag7 == false && flagCheckbox10 == true) ||
+      (flag8 == false && flagCheckbox10 == true) ||
+      (flag10 == false && flagCheckbox10 == true)
+    ) {
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      marker10.addListener("click", () => {
+        infowindow10.open({
+          anchor: marker10,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag == true && flagCheckbox32 == false) ||
+      (flag3 == false && flagCheckbox32 == true) ||
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true) ||
+      (flag9 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
   });
   trasa2.addEventListener("change", function () {
     onChangeHandler(
@@ -244,6 +317,68 @@ function initMap() {
       ],
       2
     );
+    if (
+      (flag2 == true && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag2 == true && flagCheckbox6 == false) ||
+      (flag7 == false && flagCheckbox6 == true)
+    ) {
+    } else {
+      flagMarker6 = toggleMarker(marker6, map, flagMarker6);
+      map.panTo(marker6.getPosition());
+      marker6.addListener("click", () => {
+        infowindow6.open({
+          anchor: marker6,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag2 == true && flagCheckbox9 == false) ||
+      (flag4 == false && flagCheckbox9 == true) ||
+      (flag7 == false && flagCheckbox9 == true)
+    ) {
+    } else {
+      flagMarker9 = toggleMarker(marker9, map, flagMarker9);
+      map.panTo(marker9.getPosition());
+      marker9.addListener("click", () => {
+        infowindow9.open({
+          anchor: marker9,
+          map,
+        });
+      });
+    }
+
+    if (flag2 == true && flagCheckbox13 == false) {
+    } else {
+      flagMarker13 = toggleMarker(marker13, map, flagMarker13);
+      map.panTo(marker13.getPosition());
+      marker13.addListener("click", () => {
+        infowindow13.open({
+          anchor: marker13,
+          map,
+        });
+      });
+    }
   });
 
   trasa3.addEventListener("change", function () {
@@ -261,6 +396,173 @@ function initMap() {
       ],
       3
     );
+
+    if (
+      (flag3 == true && flagCheckbox1 == false) ||
+      (flag2 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag3 == true && flagCheckbox4 == false) ||
+      (flag7 == false && flagCheckbox4 == true) ||
+      (flag9 == false && flagCheckbox4 == true)
+    ) {
+    } else {
+      flagMarker4 = toggleMarker(marker4, map, flagMarker4);
+      map.panTo(marker4.getPosition());
+      marker4.addListener("click", () => {
+        infowindow4.open({
+          anchor: marker4,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag3 == true && flagCheckbox10 == false) ||
+      (flag == false && flagCheckbox10 == true) ||
+      (flag4 == false && flagCheckbox10 == true) ||
+      (flag7 == false && flagCheckbox10 == true) ||
+      (flag8 == false && flagCheckbox10 == true) ||
+      (flag10 == false && flagCheckbox10 == true)
+    ) {
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      marker10.addListener("click", () => {
+        infowindow10.open({
+          anchor: marker10,
+          map,
+        });
+      });
+    }
+
+    if (flag3 == true && flagCheckbox11 == false) {
+    } else {
+      flagMarker11 = toggleMarker(marker11, map, flagMarker11);
+      map.panTo(marker11.getPosition());
+      marker11.addListener("click", () => {
+        infowindow11.open({
+          anchor: marker11,
+          map,
+        });
+      });
+    }
+
+    if (flag3 == true && flagCheckbox12 == false) {
+    } else {
+      flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+      map.panTo(marker12.getPosition());
+      marker12.addListener("click", () => {
+        infowindow12.open({
+          anchor: marker12,
+          map,
+        });
+      });
+    }
+
+    if (flag3 == true && flagCheckbox33 == false) {
+    } else {
+      flagMarker33 = toggleMarker(marker33, map, flagMarker33);
+      map.panTo(marker33.getPosition());
+      marker33.addListener("click", () => {
+        infowindow33.open({
+          anchor: marker33,
+          map,
+        });
+      });
+    }
+
+    if (flag3 == true && flagCheckbox32 == false) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag3 == true && flagCheckbox11 == false) ||
+      (flag7 == false && flagCheckbox11 == true)
+    ) {
+    } else {
+      flagMarker11 = toggleMarker(marker11, map, flagMarker11);
+      map.panTo(marker11.getPosition());
+      marker11.addListener("click", () => {
+        infowindow11.open({
+          anchor: marker11,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag3 == true && flagCheckbox12 == false) ||
+      (flag4 == true && flagCheckbox12 == false) ||
+      (flag7 == false && flagCheckbox12 == true)
+    ) {
+    } else {
+      flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+      map.panTo(marker12.getPosition());
+      marker12.addListener("click", () => {
+        infowindow12.open({
+          anchor: marker12,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag3 == true && flagCheckbox32 == false) ||
+      (flag == false && flagCheckbox32 == true) ||
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true) ||
+      (flag9 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag3 == true && flagCheckbox33 == false) ||
+      (flag10 == false && flagCheckbox33 == true)
+    ) {
+    } else {
+      flagMarker33 = toggleMarker(marker33, map, flagMarker33);
+      map.panTo(marker33.getPosition());
+      marker33.addListener("click", () => {
+        infowindow33.open({
+          anchor: marker33,
+          map,
+        });
+      });
+    }
   });
 
   trasa4.addEventListener("change", function () {
@@ -278,6 +580,129 @@ function initMap() {
       ],
       4
     );
+
+    if (
+      (flag4 == true && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag2 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag4 == true && flagCheckbox9 == false) ||
+      (flag2 == false && flagCheckbox9 == true) ||
+      (flag7 == false && flagCheckbox9 == true)
+    ) {
+    } else {
+      flagMarker9 = toggleMarker(marker9, map, flagMarker9);
+      map.panTo(marker9.getPosition());
+      marker9.addListener("click", () => {
+        infowindow9.open({
+          anchor: marker9,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag4 == true && flagCheckbox10 == false) ||
+      (flag3 == false && flagCheckbox10 == true) ||
+      (flag == false && flagCheckbox10 == true) ||
+      (flag7 == false && flagCheckbox10 == true) ||
+      (flag8 == false && flagCheckbox10 == true) ||
+      (flag10 == false && flagCheckbox10 == true)
+    ) {
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      marker10.addListener("click", () => {
+        infowindow10.open({
+          anchor: marker10,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag4 == true && flagCheckbox12 == false) ||
+      (flag3 == false && flagCheckbox12 == false) ||
+      (flag7 == false && flagCheckbox12 == true)
+    ) {
+    } else {
+      flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+      map.panTo(marker12.getPosition());
+      marker12.addListener("click", () => {
+        infowindow12.open({
+          anchor: marker12,
+          map,
+        });
+      });
+    }
+
+    if (flag4 == true && flagCheckbox14 == false) {
+    } else {
+      flagMarker14 = toggleMarker(marker14, map, flagMarker14);
+      map.panTo(marker14.getPosition());
+      marker14.addListener("click", () => {
+        infowindow14.open({
+          anchor: marker14,
+          map,
+        });
+      });
+    }
+
+    if (flag4 == true && flagCheckbox15 == false) {
+    } else {
+      flagMarker15 = toggleMarker(marker15, map, flagMarker15);
+      map.panTo(marker15.getPosition());
+      marker15.addListener("click", () => {
+        infowindow15.open({
+          anchor: marker15,
+          map,
+        });
+      });
+    }
+
+    if (flag4 == true && flagCheckbox18 == false) {
+    } else {
+      flagMarker18 = toggleMarker(marker18, map, flagMarker18);
+      map.panTo(marker18.getPosition());
+      marker18.addListener("click", () => {
+        infowindow18.open({
+          anchor: marker18,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag4 == true && flagCheckbox28 == false) ||
+      (flag8 == false && flagCheckbox28 == true) ||
+      (flag10 == false && flagCheckbox28 == true)
+    ) {
+    } else {
+      flagMarker28 = toggleMarker(marker28, map, flagMarker28);
+      map.panTo(marker28.getPosition());
+      marker28.addListener("click", () => {
+        infowindow12.open({
+          anchor: marker28,
+          map,
+        });
+      });
+    }
   });
 
   trasa5.addEventListener("change", function () {
@@ -354,6 +779,172 @@ function initMap() {
       ],
       7
     );
+
+    if (
+      (flag7 == true && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag2 == false && flagCheckbox1 == true) ||
+      (flag == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox4 == false) ||
+      (flag3 == false && flagCheckbox4 == true) ||
+      (flag9 == false && flagCheckbox4 == true)
+    ) {
+    } else {
+      flagMarker4 = toggleMarker(marker4, map, flagMarker4);
+      map.panTo(marker4.getPosition());
+      marker4.addListener("click", () => {
+        infowindow4.open({
+          anchor: marker4,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox6 == false) ||
+      (flag2 == false && flagCheckbox6 == true)
+    ) {
+    } else {
+      flagMarker6 = toggleMarker(marker6, map, flagMarker6);
+      map.panTo(marker6.getPosition());
+      marker6.addListener("click", () => {
+        infowindow6.open({
+          anchor: marker6,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox9 == false) ||
+      (flag4 == false && flagCheckbox9 == true) ||
+      (flag2 == false && flagCheckbox9 == true)
+    ) {
+    } else {
+      flagMarker9 = toggleMarker(marker9, map, flagMarker9);
+      map.panTo(marker9.getPosition());
+      marker9.addListener("click", () => {
+        infowindow9.open({
+          anchor: marker9,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox10 == false) ||
+      (flag3 == false && flagCheckbox10 == true) ||
+      (flag4 == false && flagCheckbox10 == true) ||
+      (flag == false && flagCheckbox10 == true) ||
+      (flag8 == false && flagCheckbox10 == true) ||
+      (flag10 == false && flagCheckbox10 == true)
+    ) {
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      marker10.addListener("click", () => {
+        infowindow10.open({
+          anchor: marker10,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox11 == false) ||
+      (flag3 == false && flagCheckbox11 == true)
+    ) {
+    } else {
+      flagMarker11 = toggleMarker(marker11, map, flagMarker11);
+      map.panTo(marker11.getPosition());
+      marker11.addListener("click", () => {
+        infowindow11.open({
+          anchor: marker11,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox12 == false) ||
+      (flag4 == true && flagCheckbox12 == false) ||
+      (flag3 == false && flagCheckbox12 == true)
+    ) {
+    } else {
+      flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+      map.panTo(marker12.getPosition());
+      marker12.addListener("click", () => {
+        infowindow12.open({
+          anchor: marker12,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox31 == false) ||
+      (flag9 == false && flagCheckbox31 == true)
+    ) {
+    } else {
+      flagMarker31 = toggleMarker(marker31, map, flagMarker31);
+      map.panTo(marker31.getPosition());
+      marker31.addListener("click", () => {
+        infowindow31.open({
+          anchor: marker31,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox32 == false) ||
+      (flag9 == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag7 == true && flagCheckbox32 == false) ||
+      (flag3 == false && flagCheckbox32 == true) ||
+      (flag == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true) ||
+      (flag9 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
   });
 
   trasa8.addEventListener("change", function () {
@@ -371,6 +962,135 @@ function initMap() {
       ],
       8
     );
+
+    if (
+      (flag8 == true && flagCheckbox10 == false) ||
+      (flag3 == false && flagCheckbox10 == true) ||
+      (flag4 == false && flagCheckbox10 == true) ||
+      (flag7 == false && flagCheckbox10 == true) ||
+      (flag == false && flagCheckbox10 == true) ||
+      (flag10 == false && flagCheckbox10 == true)
+    ) {
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      marker10.addListener("click", () => {
+        infowindow10.open({
+          anchor: marker10,
+          map,
+        });
+      });
+    }
+
+    if (flag8 == true && flagCheckbox23 == false) {
+    } else {
+      flagMarker23 = toggleMarker(marker23, map, flagMarker23);
+      map.panTo(marker23.getPosition());
+      marker23.addListener("click", () => {
+        infowindow23.open({
+          anchor: marker23,
+          map,
+        });
+      });
+    }
+
+    if (flag8 == true && flagCheckbox24 == false) {
+    } else {
+      flagMarker24 = toggleMarker(marker24, map, flagMarker24);
+      map.panTo(marker24.getPosition());
+      marker24.addListener("click", () => {
+        infowindow24.open({
+          anchor: marker24,
+          map,
+        });
+      });
+    }
+
+    if (flag8 == true && flagCheckbox25 == false) {
+    } else {
+      flagMarker25 = toggleMarker(marker25, map, flagMarker25);
+      map.panTo(marker25.getPosition());
+      marker25.addListener("click", () => {
+        infowindow25.open({
+          anchor: marker25,
+          map,
+        });
+      });
+    }
+
+    if (flag8 == true && flagCheckbox26 == false) {
+    } else {
+      flagMarker26 = toggleMarker(marker26, map, flagMarker26);
+      map.panTo(marker26.getPosition());
+      marker26.addListener("click", () => {
+        infowindow26.open({
+          anchor: marker26,
+          map,
+        });
+      });
+    }
+
+    if (flag8 == true && flagCheckbox27 == false) {
+    } else {
+      flagMarker27 = toggleMarker(marker27, map, flagMarker27);
+      map.panTo(marker27.getPosition());
+      marker27.addListener("click", () => {
+        infowindow27.open({
+          anchor: marker27,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag8 == true && flagCheckbox28 == false) ||
+      (flag4 == false && flagCheckbox28 == true) ||
+      (flag10 == false && flagCheckbox28 == true)
+    ) {
+    } else {
+      flagMarker28 = toggleMarker(marker28, map, flagMarker28);
+      map.panTo(marker28.getPosition());
+      marker28.addListener("click", () => {
+        infowindow12.open({
+          anchor: marker28,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag8 == true && flagCheckbox32 == false) ||
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag9 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag8 == true && flagCheckbox32 == false) ||
+      (flag3 == false && flagCheckbox32 == true) ||
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag == false && flagCheckbox32 == true) ||
+      (flag9 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
   });
 
   trasa9.addEventListener("change", function () {
@@ -397,6 +1117,214 @@ function initMap() {
       ],
       9
     );
+
+    if (
+      (flag9 == true && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag == false && flagCheckbox1 == true) ||
+      (flag2 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox2 == false) {
+    } else {
+      flagMarker2 = toggleMarker(marker2, map, flagMarker2);
+      map.panTo(marker2.getPosition());
+      marker2.addListener("click", () => {
+        infowindow2.open({
+          anchor: marker2,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag9 == true && flagCheckbox3 == false) ||
+      (flag10 == false && flagCheckbox3 == true)
+    ) {
+    } else {
+      flagMarker3 = toggleMarker(marker3, map, flagMarker3);
+      map.panTo(marker3.getPosition());
+      marker3.addListener("click", () => {
+        infowindow3.open({
+          anchor: marker3,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag9 == true && flagCheckbox4 == false) ||
+      (flag7 == false && flagCheckbox4 == true) ||
+      (flag3 == false && flagCheckbox4 == true)
+    ) {
+    } else {
+      flagMarker4 = toggleMarker(marker4, map, flagMarker4);
+      map.panTo(marker4.getPosition());
+      marker4.addListener("click", () => {
+        infowindow4.open({
+          anchor: marker4,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox5 == false) {
+    } else {
+      flagMarker5 = toggleMarker(marker5, map, flagMarker5);
+      map.panTo(marker5.getPosition());
+      marker5.addListener("click", () => {
+        infowindow5.open({
+          anchor: marker5,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox7 == false) {
+    } else {
+      flagMarker7 = toggleMarker(marker7, map, flagMarker7);
+      map.panTo(marker7.getPosition());
+      marker7.addListener("click", () => {
+        infowindow7.open({
+          anchor: marker7,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox16 == false) {
+    } else {
+      flagMarker16 = toggleMarker(marker16, map, flagMarker16);
+      map.panTo(marker16.getPosition());
+      marker16.addListener("click", () => {
+        infowindow16.open({
+          anchor: marker16,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox17 == false) {
+    } else {
+      flagMarker17 = toggleMarker(marker17, map, flagMarker17);
+      map.panTo(marker17.getPosition());
+      marker17.addListener("click", () => {
+        infowindow17.open({
+          anchor: marker17,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox20 == false) {
+    } else {
+      flagMarker20 = toggleMarker(marker20, map, flagMarker20);
+      map.panTo(marker20.getPosition());
+      marker20.addListener("click", () => {
+        infowindow20.open({
+          anchor: marker20,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox21 == false) {
+    } else {
+      flagMarker21 = toggleMarker(marker21, map, flagMarker21);
+      map.panTo(marker21.getPosition());
+      marker21.addListener("click", () => {
+        infowindow21.open({
+          anchor: marker21,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox22 == false) {
+    } else {
+      flagMarker22 = toggleMarker(marker22, map, flagMarker22);
+      map.panTo(marker22.getPosition());
+      marker22.addListener("click", () => {
+        infowindow22.open({
+          anchor: marker22,
+          map,
+        });
+      });
+    }
+
+    if (flag9 == true && flagCheckbox29 == false) {
+    } else {
+      flagMarker29 = toggleMarker(marker29, map, flagMarker29);
+      map.panTo(marker29.getPosition());
+      marker29.addListener("click", () => {
+        infowindow29.open({
+          anchor: marker29,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag9 == true && flagCheckbox31 == false) ||
+      (flag7 == false && flagCheckbox31 == true)
+    ) {
+    } else {
+      flagMarker31 = toggleMarker(marker31, map, flagMarker31);
+      map.panTo(marker31.getPosition());
+      marker31.addListener("click", () => {
+        infowindow31.open({
+          anchor: marker31,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag9 == true && flagCheckbox32 == false) ||
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag9 == true && flagCheckbox32 == false) ||
+      (flag3 == false && flagCheckbox32 == true) ||
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true) ||
+      (flag == false && flagCheckbox32 == true)
+    ) {
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      marker32.addListener("click", () => {
+        infowindow32.open({
+          anchor: marker32,
+          map,
+        });
+      });
+    }
   });
 
   trasa10.addEventListener("change", function () {
@@ -419,9 +1347,113 @@ function initMap() {
       ],
       10
     );
+
+    if (
+      (flag10 == true && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag2 == false && flagCheckbox1 == true)
+    ) {
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      marker1.addListener("click", () => {
+        infowindow1.open({
+          anchor: marker1,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag10 == true && flagCheckbox3 == false) ||
+      (flag9 == false && flagCheckbox3 == true)
+    ) {
+    } else {
+      flagMarker3 = toggleMarker(marker3, map, flagMarker3);
+      map.panTo(marker3.getPosition());
+      marker3.addListener("click", () => {
+        infowindow3.open({
+          anchor: marker3,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag10 == true && flagCheckbox10 == false) ||
+      (flag3 == false && flagCheckbox10 == true) ||
+      (flag4 == false && flagCheckbox10 == true) ||
+      (flag7 == false && flagCheckbox10 == true) ||
+      (flag8 == false && flagCheckbox10 == true) ||
+      (flag == false && flagCheckbox10 == true)
+    ) {
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      marker10.addListener("click", () => {
+        infowindow10.open({
+          anchor: marker10,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag10 == true && flagCheckbox28 == false) ||
+      (flag8 == false && flagCheckbox28 == true) ||
+      (flag4 == false && flagCheckbox28 == true)
+    ) {
+    } else {
+      flagMarker28 = toggleMarker(marker28, map, flagMarker28);
+      map.panTo(marker28.getPosition());
+      marker28.addListener("click", () => {
+        infowindow28.open({
+          anchor: marker28,
+          map,
+        });
+      });
+    }
+
+    if (
+      (flag10 == true && flagCheckbox33 == false) ||
+      (flag3 == false && flagCheckbox33 == true)
+    ) {
+    } else {
+      flagMarker33 = toggleMarker(marker33, map, flagMarker33);
+      map.panTo(marker33.getPosition());
+      marker33.addListener("click", () => {
+        infowindow33.open({
+          anchor: marker33,
+          map,
+        });
+      });
+    }
+
+    if (flag10 == true && flagCheckbox34 == false) {
+    } else {
+      flagMarker34 = toggleMarker(marker34, map, flagMarker34);
+      map.panTo(marker34.getPosition());
+      marker34.addListener("click", () => {
+        infowindow34.open({
+          anchor: marker34,
+          map,
+        });
+      });
+    }
   });
 
   const marker1 = new google.maps.Marker({
+    position: { lat: 51.8960138469201, lng: 17.786460676606847 },
+    title: "Rynek",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/picnic.png",
+    },
+  });
+  const marker1Route4 = new google.maps.Marker({
     position: { lat: 51.8960138469201, lng: 17.786460676606847 },
     title: "Rynek",
     icon: {
@@ -441,8 +1473,31 @@ function initMap() {
       });
     });
 
-    flagMarker1 = toggleMarker(marker1, map, flagMarker1);
-    map.panTo(marker1.getPosition());
+    if (
+      (flag == false && flagCheckbox1 == true) ||
+      (flag3 == false && flagCheckbox1 == true) ||
+      (flag2 == false && flagCheckbox1 == true) ||
+      (flag4 == false && flagCheckbox1 == true) ||
+      (flag7 == false && flagCheckbox1 == true) ||
+      (flag9 == false && flagCheckbox1 == true) ||
+      (flag10 == false && flagCheckbox1 == true)
+    ) {
+      flagCheckbox1 = !flagCheckbox1;
+    } else if (
+      (flag == false && flagCheckbox1 == false) ||
+      (flag3 == false && flagCheckbox1 == false) ||
+      (flag2 == false && flagCheckbox1 == false) ||
+      (flag4 == false && flagCheckbox1 == false) ||
+      (flag7 == false && flagCheckbox1 == false) ||
+      (flag9 == false && flagCheckbox1 == false) ||
+      (flag10 == false && flagCheckbox1 == false)
+    ) {
+      flagCheckbox1 = !flagCheckbox1;
+    } else {
+      flagMarker1 = toggleMarker(marker1, map, flagMarker1);
+      map.panTo(marker1.getPosition());
+      flagCheckbox1 = !flagCheckbox1;
+    }
   });
 
   const marker2 = new google.maps.Marker({
@@ -465,8 +1520,15 @@ function initMap() {
       });
     });
 
-    flagMarker2 = toggleMarker(marker2, map, flagMarker2);
-    map.panTo(marker2.getPosition());
+    if (flag9 == false && flagCheckbox2 == true) {
+      flagCheckbox2 = !flagCheckbox2;
+    } else if (flag9 == false && flagCheckbox2 == false) {
+      flagCheckbox2 = !flagCheckbox2;
+    } else {
+      flagMarker2 = toggleMarker(marker2, map, flagMarker2);
+      map.panTo(marker2.getPosition());
+      flagCheckbox2 = !flagCheckbox2;
+    }
   });
 
   const marker3 = new google.maps.Marker({
@@ -489,8 +1551,21 @@ function initMap() {
       });
     });
 
-    flagMarker3 = toggleMarker(marker3, map, flagMarker3);
-    map.panTo(marker3.getPosition());
+    if (
+      (flag9 == false && flagCheckbox3 == true) ||
+      (flag10 == false && flagCheckbox3 == true)
+    ) {
+      flagCheckbox3 = !flagCheckbox3;
+    } else if (
+      (flag9 == false && flagCheckbox3 == false) ||
+      (flag10 == false && flagCheckbox3 == true)
+    ) {
+      flagCheckbox3 = !flagCheckbox3;
+    } else {
+      flagMarker3 = toggleMarker(marker3, map, flagMarker3);
+      map.panTo(marker3.getPosition());
+      flagCheckbox3 = !flagCheckbox3;
+    }
   });
 
   const marker4 = new google.maps.Marker({
@@ -510,8 +1585,23 @@ function initMap() {
       });
     });
 
-    flagMarker4 = toggleMarker(marker4, map, flagMarker4);
-    map.panTo(marker4.getPosition());
+    if (
+      (flag3 == false && flagCheckbox4 == true) ||
+      (flag7 == false && flagCheckbox4 == true) ||
+      (flag9 == false && flagCheckbox4 == true)
+    ) {
+      flagCheckbox4 = !flagCheckbox4;
+    } else if (
+      (flag3 == false && flagCheckbox4 == false) ||
+      (flag7 == false && flagCheckbox4 == true) ||
+      (flag9 == false && flagCheckbox4 == true)
+    ) {
+      flagCheckbox4 = !flagCheckbox4;
+    } else {
+      flagMarker4 = toggleMarker(marker4, map, flagMarker4);
+      map.panTo(marker4.getPosition());
+      flagCheckbox4 = !flagCheckbox4;
+    }
   });
 
   const marker5 = new google.maps.Marker({
@@ -534,8 +1624,15 @@ function initMap() {
       });
     });
 
-    flagMarker5 = toggleMarker(marker5, map, flagMarker5);
-    map.panTo(marker5.getPosition());
+    if (flag9 == false && flagCheckbox5 == true) {
+      flagCheckbox5 = !flagCheckbox5;
+    } else if (flag9 == false && flagCheckbox5 == false) {
+      flagCheckbox5 = !flagCheckbox5;
+    } else {
+      flagMarker5 = toggleMarker(marker5, map, flagMarker5);
+      map.panTo(marker5.getPosition());
+      flagCheckbox5 = !flagCheckbox5;
+    }
   });
 
   const marker6 = new google.maps.Marker({
@@ -558,8 +1655,21 @@ function initMap() {
       });
     });
 
-    flagMarker6 = toggleMarker(marker6, map, flagMarker6);
-    map.panTo(marker6.getPosition());
+    if (
+      (flag2 == false && flagCheckbox6 == true) ||
+      (flag7 == false && flagCheckbox6 == true)
+    ) {
+      flagCheckbox6 = !flagCheckbox6;
+    } else if (
+      (flag2 == false && flagCheckbox6 == false) ||
+      (flag7 == false && flagCheckbox6 == false)
+    ) {
+      flagCheckbox6 = !flagCheckbox6;
+    } else {
+      flagMarker6 = toggleMarker(marker6, map, flagMarker6);
+      map.panTo(marker6.getPosition());
+      flagCheckbox6 = !flagCheckbox6;
+    }
   });
 
   const marker7 = new google.maps.Marker({
@@ -582,8 +1692,15 @@ function initMap() {
       });
     });
 
-    flagMarker7 = toggleMarker(marker7, map, flagMarker7);
-    map.panTo(marker7.getPosition());
+    if (flag9 == false && flagCheckbox7 == true) {
+      flagCheckbox7 = !flagCheckbox7;
+    } else if (flag9 == false && flagCheckbox7 == false) {
+      flagCheckbox7 = !flagCheckbox7;
+    } else {
+      flagMarker7 = toggleMarker(marker7, map, flagMarker7);
+      map.panTo(marker7.getPosition());
+      flagCheckbox7 = !flagCheckbox7;
+    }
   });
 
   const marker8 = new google.maps.Marker({
@@ -606,8 +1723,15 @@ function initMap() {
       });
     });
 
-    flagMarker8 = toggleMarker(marker8, map, flagMarker8);
-    map.panTo(marker8.getPosition());
+    if (flag == false && flagCheckbox8 == true) {
+      flagCheckbox8 = !flagCheckbox8;
+    } else if (flag == false && flagCheckbox8 == false) {
+      flagCheckbox8 = !flagCheckbox8;
+    } else {
+      flagMarker8 = toggleMarker(marker8, map, flagMarker8);
+      map.panTo(marker8.getPosition());
+      flagCheckbox8 = !flagCheckbox8;
+    }
   });
 
   const marker9 = new google.maps.Marker({
@@ -630,8 +1754,23 @@ function initMap() {
       });
     });
 
-    flagMarker9 = toggleMarker(marker9, map, flagMarker9);
-    map.panTo(marker9.getPosition());
+    if (
+      (flag2 == false && flagCheckbox9 == true) ||
+      (flag4 == false && flagCheckbox9 == true) ||
+      (flag7 == false && flagCheckbox9 == true)
+    ) {
+      flagCheckbox9 = !flagCheckbox9;
+    } else if (
+      (flag2 == false && flagCheckbox9 == false) ||
+      (flag4 == false && flagCheckbox9 == false) ||
+      (flag7 == false && flagCheckbox9 == false)
+    ) {
+      flagCheckbox9 = !flagCheckbox9;
+    } else {
+      flagMarker9 = toggleMarker(marker9, map, flagMarker9);
+      map.panTo(marker9.getPosition());
+      flagCheckbox9 = !flagCheckbox9;
+    }
   });
 
   const marker10 = new google.maps.Marker({
@@ -654,8 +1793,29 @@ function initMap() {
       });
     });
 
-    flagMarker10 = toggleMarker(marker10, map, flagMarker10);
-    map.panTo(marker10.getPosition());
+    if (
+      (flag3 == false && flagCheckbox10 == true) ||
+      (flag4 == false && flagCheckbox10 == true) ||
+      (flag7 == false && flagCheckbox10 == true) ||
+      (flag == false && flagCheckbox10 == true) ||
+      (flag8 == false && flagCheckbox10 == true) ||
+      (flag10 == false && flagCheckbox10 == true)
+    ) {
+      flagCheckbox10 = !flagCheckbox10;
+    } else if (
+      (flag3 == false && flagCheckbox10 == false) ||
+      (flag4 == false && flagCheckbox10 == false) ||
+      (flag7 == false && flagCheckbox10 == false) ||
+      (flag == false && flagCheckbox10 == false) ||
+      (flag8 == false && flagCheckbox10 == false) ||
+      (flag10 == false && flagCheckbox10 == false)
+    ) {
+      flagCheckbox10 = !flagCheckbox10;
+    } else {
+      flagMarker10 = toggleMarker(marker10, map, flagMarker10);
+      map.panTo(marker10.getPosition());
+      flagCheckbox10 = !flagCheckbox10;
+    }
   });
 
   const marker11 = new google.maps.Marker({
@@ -678,8 +1838,21 @@ function initMap() {
       });
     });
 
-    flagMarker11 = toggleMarker(marker11, map, flagMarker11);
-    map.panTo(marker11.getPosition());
+    if (
+      (flag3 == false && flagCheckbox11 == true) ||
+      (flag7 == false && flagCheckbox11 == true)
+    ) {
+      flagCheckbox11 = !flagCheckbox11;
+    } else if (
+      (flag3 == false && flagCheckbox11 == false) ||
+      (flag7 == false && flagCheckbox11 == false)
+    ) {
+      flagCheckbox11 = !flagCheckbox11;
+    } else {
+      flagMarker11 = toggleMarker(marker11, map, flagMarker11);
+      map.panTo(marker11.getPosition());
+      flagCheckbox11 = !flagCheckbox11;
+    }
   });
 
   const marker12 = new google.maps.Marker({
@@ -702,8 +1875,23 @@ function initMap() {
       });
     });
 
-    flagMarker12 = toggleMarker(marker12, map, flagMarker12);
-    map.panTo(marker12.getPosition());
+    if (
+      (flag3 == false && flagCheckbox12 == true) ||
+      (flag4 == false && flagCheckbox12 == true) ||
+      (flag7 == false && flagCheckbox12 == true)
+    ) {
+      flagCheckbox12 = !flagCheckbox12;
+    } else if (
+      (flag3 == false && flagCheckbox12 == false) ||
+      (flag4 == false && flagCheckbox12 == false) ||
+      (flag7 == false && flagCheckbox12 == false)
+    ) {
+      flagCheckbox12 = !flagCheckbox12;
+    } else {
+      flagMarker12 = toggleMarker(marker12, map, flagMarker12);
+      map.panTo(marker12.getPosition());
+      flagCheckbox12 = !flagCheckbox12;
+    }
   });
 
   const marker13 = new google.maps.Marker({
@@ -726,8 +1914,15 @@ function initMap() {
       });
     });
 
-    flagMarker13 = toggleMarker(marker13, map, flagMarker13);
-    map.panTo(marker13.getPosition());
+    if (flag2 == false && flagCheckbox13 == true) {
+      flagCheckbox13 = !flagCheckbox13;
+    } else if (flag2 == false && flagCheckbox13 == false) {
+      flagCheckbox13 = !flagCheckbox13;
+    } else {
+      flagMarker13 = toggleMarker(marker13, map, flagMarker13);
+      map.panTo(marker13.getPosition());
+      flagCheckbox13 = !flagCheckbox13;
+    }
   });
 
   const marker14 = new google.maps.Marker({
@@ -750,8 +1945,15 @@ function initMap() {
       });
     });
 
-    flagMarker14 = toggleMarker(marker14, map, flagMarker14);
-    map.panTo(marker14.getPosition());
+    if (flag4 == false && flagCheckbox14 == true) {
+      flagCheckbox14 = !flagCheckbox14;
+    } else if (flag4 == false && flagCheckbox14 == false) {
+      flagCheckbox14 = !flagCheckbox14;
+    } else {
+      flagMarker14 = toggleMarker(marker14, map, flagMarker14);
+      map.panTo(marker14.getPosition());
+      flagCheckbox14 = !flagCheckbox14;
+    }
   });
 
   const marker15 = new google.maps.Marker({
@@ -774,8 +1976,15 @@ function initMap() {
       });
     });
 
-    flagMarker15 = toggleMarker(marker15, map, flagMarker15);
-    map.panTo(marker15.getPosition());
+    if (flag4 == false && flagCheckbox15 == true) {
+      flagCheckbox15 = !flagCheckbox15;
+    } else if (flag4 == false && flagCheckbox15 == false) {
+      flagCheckbox15 = !flagCheckbox15;
+    } else {
+      flagMarker15 = toggleMarker(marker15, map, flagMarker15);
+      map.panTo(marker15.getPosition());
+      flagCheckbox15 = !flagCheckbox15;
+    }
   });
 
   const marker16 = new google.maps.Marker({
@@ -798,8 +2007,15 @@ function initMap() {
       });
     });
 
-    flagMarker16 = toggleMarker(marker16, map, flagMarker16);
-    map.panTo(marker16.getPosition());
+    if (flag9 == false && flagCheckbox16 == true) {
+      flagCheckbox16 = !flagCheckbox16;
+    } else if (flag9 == false && flagCheckbox16 == false) {
+      flagCheckbox16 = !flagCheckbox16;
+    } else {
+      flagMarker16 = toggleMarker(marker16, map, flagMarker16);
+      map.panTo(marker16.getPosition());
+      flagCheckbox16 = !flagCheckbox16;
+    }
   });
 
   const marker17 = new google.maps.Marker({
@@ -822,8 +2038,15 @@ function initMap() {
       });
     });
 
-    flagMarker17 = toggleMarker(marker17, map, flagMarker17);
-    map.panTo(marker17.getPosition());
+    if (flag9 == false && flagCheckbox17 == true) {
+      flagCheckbox17 = !flagCheckbox17;
+    } else if (flag9 == false && flagCheckbox17 == false) {
+      flagCheckbox17 = !flagCheckbox17;
+    } else {
+      flagMarker17 = toggleMarker(marker17, map, flagMarker17);
+      map.panTo(marker17.getPosition());
+      flagCheckbox17 = !flagCheckbox17;
+    }
   });
 
   const marker18 = new google.maps.Marker({
@@ -846,8 +2069,15 @@ function initMap() {
       });
     });
 
-    flagMarker18 = toggleMarker(marker18, map, flagMarker18);
-    map.panTo(marker18.getPosition());
+    if (flag4 == false && flagCheckbox18 == true) {
+      flagCheckbox18 = !flagCheckbox18;
+    } else if (flag4 == false && flagCheckbox18 == false) {
+      flagCheckbox18 = !flagCheckbox18;
+    } else {
+      flagMarker18 = toggleMarker(marker18, map, flagMarker18);
+      map.panTo(marker18.getPosition());
+      flagCheckbox18 = !flagCheckbox18;
+    }
   });
 
   const marker19 = new google.maps.Marker({
@@ -894,8 +2124,15 @@ function initMap() {
       });
     });
 
-    flagMarker20 = toggleMarker(marker20, map, flagMarker20);
-    map.panTo(marker20.getPosition());
+    if (flag9 == false && flagCheckbox20 == true) {
+      flagCheckbox20 = !flagCheckbox20;
+    } else if (flag9 == false && flagCheckbox20 == false) {
+      flagCheckbox20 = !flagCheckbox20;
+    } else {
+      flagMarker20 = toggleMarker(marker20, map, flagMarker20);
+      map.panTo(marker20.getPosition());
+      flagCheckbox20 = !flagCheckbox20;
+    }
   });
 
   const marker21 = new google.maps.Marker({
@@ -918,8 +2155,15 @@ function initMap() {
       });
     });
 
-    flagMarker21 = toggleMarker(marker21, map, flagMarker21);
-    map.panTo(marker21.getPosition());
+    if (flag9 == false && flagCheckbox21 == true) {
+      flagCheckbox21 = !flagCheckbox21;
+    } else if (flag9 == false && flagCheckbox21 == false) {
+      flagCheckbox21 = !flagCheckbox21;
+    } else {
+      flagMarker21 = toggleMarker(marker21, map, flagMarker21);
+      map.panTo(marker21.getPosition());
+      flagCheckbox21 = !flagCheckbox21;
+    }
   });
 
   const marker22 = new google.maps.Marker({
@@ -942,8 +2186,15 @@ function initMap() {
       });
     });
 
-    flagMarker22 = toggleMarker(marker22, map, flagMarker22);
-    map.panTo(marker22.getPosition());
+    if (flag9 == false && flagCheckbox22 == true) {
+      flagCheckbox22 = !flagCheckbox22;
+    } else if (flag9 == false && flagCheckbox22 == false) {
+      flagCheckbox22 = !flagCheckbox22;
+    } else {
+      flagMarker22 = toggleMarker(marker22, map, flagMarker22);
+      map.panTo(marker22.getPosition());
+      flagCheckbox22 = !flagCheckbox22;
+    }
   });
 
   const marker23 = new google.maps.Marker({
@@ -966,8 +2217,15 @@ function initMap() {
       });
     });
 
-    flagMarker23 = toggleMarker(marker23, map, flagMarker23);
-    map.panTo(marker23.getPosition());
+    if (flag8 == false && flagCheckbox23 == true) {
+      flagCheckbox23 = !flagCheckbox23;
+    } else if (flag8 == false && flagCheckbox23 == false) {
+      flagCheckbox23 = !flagCheckbox23;
+    } else {
+      flagMarker23 = toggleMarker(marker23, map, flagMarker23);
+      map.panTo(marker23.getPosition());
+      flagCheckbox23 = !flagCheckbox23;
+    }
   });
 
   const marker24 = new google.maps.Marker({
@@ -990,8 +2248,15 @@ function initMap() {
       });
     });
 
-    flagMarker24 = toggleMarker(marker24, map, flagMarker24);
-    map.panTo(marker24.getPosition());
+    if (flag8 == false && flagCheckbox24 == true) {
+      flagCheckbox24 = !flagCheckbox24;
+    } else if (flag8 == false && flagCheckbox24 == false) {
+      flagCheckbox24 = !flagCheckbox24;
+    } else {
+      flagMarker24 = toggleMarker(marker24, map, flagMarker24);
+      map.panTo(marker24.getPosition());
+      flagCheckbox24 = !flagCheckbox24;
+    }
   });
 
   const marker25 = new google.maps.Marker({
@@ -1014,8 +2279,15 @@ function initMap() {
       });
     });
 
-    flagMarker25 = toggleMarker(marker25, map, flagMarker25);
-    map.panTo(marker25.getPosition());
+    if (flag8 == false && flagCheckbox25 == true) {
+      flagCheckbox25 = !flagCheckbox25;
+    } else if (flag8 == false && flagCheckbox25 == false) {
+      flagCheckbox25 = !flagCheckbox25;
+    } else {
+      flagMarker25 = toggleMarker(marker25, map, flagMarker25);
+      map.panTo(marker25.getPosition());
+      flagCheckbox25 = !flagCheckbox25;
+    }
   });
 
   const marker26 = new google.maps.Marker({
@@ -1038,8 +2310,15 @@ function initMap() {
       });
     });
 
-    flagMarker26 = toggleMarker(marker26, map, flagMarker26);
-    map.panTo(marker26.getPosition());
+    if (flag8 == false && flagCheckbox26 == true) {
+      flagCheckbox26 = !flagCheckbox26;
+    } else if (flag8 == false && flagCheckbox26 == false) {
+      flagCheckbox26 = !flagCheckbox26;
+    } else {
+      flagMarker26 = toggleMarker(marker26, map, flagMarker26);
+      map.panTo(marker26.getPosition());
+      flagCheckbox26 = !flagCheckbox26;
+    }
   });
 
   const marker27 = new google.maps.Marker({
@@ -1065,8 +2344,15 @@ function initMap() {
       });
     });
 
-    flagMarker27 = toggleMarker(marker27, map, flagMarker27);
-    map.panTo(marker27.getPosition());
+    if (flag8 == false && flagCheckbox27 == true) {
+      flagCheckbox27 = !flagCheckbox27;
+    } else if (flag8 == false && flagCheckbox27 == false) {
+      flagCheckbox27 = !flagCheckbox27;
+    } else {
+      flagMarker27 = toggleMarker(marker27, map, flagMarker27);
+      map.panTo(marker27.getPosition());
+      flagCheckbox27 = !flagCheckbox27;
+    }
   });
 
   const marker28 = new google.maps.Marker({
@@ -1089,8 +2375,23 @@ function initMap() {
       });
     });
 
-    flagMarker28 = toggleMarker(marker28, map, flagMarker28);
-    map.panTo(marker28.getPosition());
+    if (
+      (flag8 == false && flagCheckbox28 == true) ||
+      (flag4 == false && flagCheckbox28 == true) ||
+      (flag10 == false && flagCheckbox28 == true)
+    ) {
+      flagCheckbox28 = !flagCheckbox28;
+    } else if (
+      (flag8 == false && flagCheckbox28 == false) ||
+      (flag4 == false && flagCheckbox28 == false) ||
+      (flag10 == false && flagCheckbox28 == false)
+    ) {
+      flagCheckbox28 = !flagCheckbox28;
+    } else {
+      flagMarker28 = toggleMarker(marker28, map, flagMarker28);
+      map.panTo(marker28.getPosition());
+      flagCheckbox28 = !flagCheckbox28;
+    }
   });
 
   const marker29 = new google.maps.Marker({
@@ -1113,8 +2414,15 @@ function initMap() {
       });
     });
 
-    flagMarker29 = toggleMarker(marker29, map, flagMarker29);
-    map.panTo(marker29.getPosition());
+    if (flag9 == false && flagCheckbox29 == true) {
+      flagCheckbox29 = !flagCheckbox29;
+    } else if (flag9 == false && flagCheckbox29 == false) {
+      flagCheckbox29 = !flagCheckbox29;
+    } else {
+      flagMarker29 = toggleMarker(marker29, map, flagMarker29);
+      map.panTo(marker29.getPosition());
+      flagCheckbox29 = !flagCheckbox29;
+    }
   });
 
   const marker30 = new google.maps.Marker({
@@ -1137,8 +2445,21 @@ function initMap() {
       });
     });
 
-    flagMarker30 = toggleMarker(marker30, map, flagMarker30);
-    map.panTo(marker30.getPosition());
+    if (
+      (flag7 == false && flagCheckbox30 == true) ||
+      (flag9 == false && flagCheckbox30 == true)
+    ) {
+      flagCheckbox30 = !flagCheckbox30;
+    } else if (
+      (flag7 == false && flagCheckbox30 == false) ||
+      (flag9 == false && flagCheckbox30 == false)
+    ) {
+      flagCheckbox30 = !flagCheckbox30;
+    } else {
+      flagMarker30 = toggleMarker(marker30, map, flagMarker30);
+      map.panTo(marker30.getPosition());
+      flagCheckbox30 = !flagCheckbox30;
+    }
   });
 
   const marker31 = new google.maps.Marker({
@@ -1161,8 +2482,23 @@ function initMap() {
       });
     });
 
-    flagMarker31 = toggleMarker(marker31, map, flagMarker31);
-    map.panTo(marker31.getPosition());
+    if (
+      (flag7 == false && flagCheckbox31 == true) ||
+      (flag9 == false && flagCheckbox31 == true) ||
+      (flag8 == false && flagCheckbox31 == true)
+    ) {
+      flagCheckbox31 = !flagCheckbox31;
+    } else if (
+      (flag7 == false && flagCheckbox31 == false) ||
+      (flag9 == false && flagCheckbox31 == false) ||
+      (flag8 == false && flagCheckbox31 == false)
+    ) {
+      flagCheckbox31 = !flagCheckbox31;
+    } else {
+      flagMarker31 = toggleMarker(marker31, map, flagMarker31);
+      map.panTo(marker31.getPosition());
+      flagCheckbox31 = !flagCheckbox31;
+    }
   });
 
   const marker32 = new google.maps.Marker({
@@ -1185,8 +2521,27 @@ function initMap() {
       });
     });
 
-    flagMarker32 = toggleMarker(marker32, map, flagMarker32);
-    map.panTo(marker32.getPosition());
+    if (
+      (flag7 == false && flagCheckbox32 == true) ||
+      (flag9 == false && flagCheckbox32 == true) ||
+      (flag8 == false && flagCheckbox32 == true) ||
+      (flag3 == false && flagCheckbox32 == true) ||
+      (flag == false && flagCheckbox32 == true)
+    ) {
+      flagCheckbox32 = !flagCheckbox21;
+    } else if (
+      (flag7 == false && flagCheckbox32 == false) ||
+      (flag9 == false && flagCheckbox32 == false) ||
+      (flag8 == false && flagCheckbox32 == false) ||
+      (flag3 == false && flagCheckbox32 == false) ||
+      (flag == false && flagCheckbox32 == false)
+    ) {
+      flagCheckbox32 = !flagCheckbox32;
+    } else {
+      flagMarker32 = toggleMarker(marker32, map, flagMarker32);
+      map.panTo(marker32.getPosition());
+      flagCheckbox32 = !flagCheckbox32;
+    }
   });
 
   const marker33 = new google.maps.Marker({
@@ -1209,8 +2564,21 @@ function initMap() {
       });
     });
 
-    flagMarker33 = toggleMarker(marker33, map, flagMarker33);
-    map.panTo(marker33.getPosition());
+    if (
+      (flag3 == false && flagCheckbox33 == true) ||
+      (flag10 == false && flagCheckbox33 == true)
+    ) {
+      flagCheckbox33 = !flagCheckbox33;
+    } else if (
+      (flag3 == false && flagCheckbox33 == false) ||
+      (flag10 == false && flagCheckbox33 == false)
+    ) {
+      flagCheckbox33 = !flagCheckbox33;
+    } else {
+      flagMarker33 = toggleMarker(marker33, map, flagMarker33);
+      map.panTo(marker33.getPosition());
+      flagCheckbox33 = !flagCheckbox33;
+    }
   });
 
   const marker34 = new google.maps.Marker({
@@ -1233,11 +2601,18 @@ function initMap() {
       });
     });
 
-    flagMarker34 = toggleMarker(marker34, map, flagMarker34);
-    map.panTo(marker34.getPosition());
+    if (flag10 == false && flagCheckbox34 == true) {
+      flagCheckbox34 = !flagCheckbox34;
+    } else if (flag10 == false && flagCheckbox34 == false) {
+      flagCheckbox34 = !flagCheckbox34;
+    } else {
+      flagMarker34 = toggleMarker(marker34, map, flagMarker34);
+      map.panTo(marker34.getPosition());
+      flagCheckbox34 = !flagCheckbox34;
+    }
   });
 
-  const marker35 = new google.maps.Marker({
+  /* const marker35 = new google.maps.Marker({
     position: { lat: 51.891250647438476, lng: 17.783527436115193 },
     title: "Stacja Kolejowa Pleszew",
     icon: {
@@ -1259,7 +2634,7 @@ function initMap() {
 
     flagMarker35 = toggleMarker(marker35, map, flagMarker35);
     map.panTo(marker35.getPosition());
-  });
+  });*/
 }
 
 function toggleMarker(marker, map, flag) {
