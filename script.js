@@ -8,8 +8,11 @@ const trasa7 = document.getElementById("trasa7");
 const trasa8 = document.getElementById("trasa8");
 const trasa9 = document.getElementById("trasa9");
 const trasa10 = document.getElementById("trasa10");
+const trasa11 = document.getElementById("trasa11");
+const trasa12 = document.getElementById("trasa12");
+const trasa13 = document.getElementById("trasa13");
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 13; i++) {
   eval(
     "var liTrasa" +
       i +
@@ -51,6 +54,15 @@ trasa9.addEventListener("click", function () {
 trasa10.addEventListener("click", function () {
   liTrasa10.classList.toggle("liTrasa10Back");
 });
+trasa11.addEventListener("click", function () {
+  liTrasa11.classList.toggle("liTrasa11Back");
+});
+trasa12.addEventListener("click", function () {
+  liTrasa12.classList.toggle("liTrasa12Back");
+});
+trasa13.addEventListener("click", function () {
+  liTrasa13.classList.toggle("liTrasa13Back");
+});
 
 let flag = true;
 let flag2 = true;
@@ -62,6 +74,9 @@ let flag7 = true;
 let flag8 = true;
 let flag9 = true;
 let flag10 = true;
+let flag11 = true;
+let flag12 = true;
+let flag13 = true;
 
 for (let i = 1; i <= 34; i++) {
   eval(
@@ -107,6 +122,12 @@ function initMap() {
   const directionsRenderer9 = new google.maps.DirectionsRenderer();
   const directionsService10 = new google.maps.DirectionsService();
   const directionsRenderer10 = new google.maps.DirectionsRenderer();
+  const directionsService11 = new google.maps.DirectionsService();
+  const directionsRenderer11 = new google.maps.DirectionsRenderer();
+  const directionsService12 = new google.maps.DirectionsService();
+  const directionsRenderer12 = new google.maps.DirectionsRenderer();
+  const directionsService13 = new google.maps.DirectionsService();
+  const directionsRenderer13 = new google.maps.DirectionsRenderer();
   console.log(directionsRenderer);
   const Pleszew = { lat: 51.897361, lng: 17.785614 };
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -194,6 +215,30 @@ function initMap() {
     suppressMarkers: true,
   });
 
+  directionsRenderer11.setOptions({
+    polylineOptions: {
+      strokeColor: "#e28743",
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer12.setOptions({
+    polylineOptions: {
+      strokeColor: "#666699",
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
+  directionsRenderer13.setOptions({
+    polylineOptions: {
+      strokeColor: "#339933",
+      strokeWeight: strokeWeight,
+    },
+    suppressMarkers: true,
+  });
+
   directionsRenderer.setMap(map);
   directionsRenderer2.setMap(map);
   directionsRenderer3.setMap(map);
@@ -204,6 +249,9 @@ function initMap() {
   directionsRenderer8.setMap(map);
   directionsRenderer9.setMap(map);
   directionsRenderer10.setMap(map);
+  directionsRenderer11.setMap(map);
+  directionsRenderer12.setMap(map);
+  directionsRenderer13.setMap(map);
   //calculateRoute(directionsService, directionsRenderer);
 
   const onChangeHandler = function (
@@ -1444,6 +1492,50 @@ function initMap() {
         });
       });
     }
+  });
+
+  trasa11.addEventListener("change", function () {
+    onChangeHandler(
+      directionsService11,
+      directionsRenderer11,
+      [
+        { lat: 51.89737118360369, lng: 17.786874106593714 },
+        { lat: 51.89136999137996, lng: 17.779985054667453 },
+        { lat: 51.89617937114917, lng: 17.78715800706718 },
+        { lat: 51.89550180198689, lng: 17.786912185657204 },
+      ],
+      11
+    );
+  });
+
+  trasa12.addEventListener("change", function () {
+    onChangeHandler(
+      directionsService12,
+      directionsRenderer12,
+      [
+        { lat: 51.89556617353168, lng: 17.78597146802227 },
+        { lat: 51.91793489680233, lng: 17.658341117139592 },
+        { lat: 51.891618266935524, lng: 17.77529744603731 },
+        { lat: 51.89327769817929, lng: 17.74166605521401 },
+        { lat: 51.888240594701074, lng: 17.72746526648438 },
+      ],
+      12
+    );
+  });
+
+  trasa13.addEventListener("change", function () {
+    onChangeHandler(
+      directionsService13,
+      directionsRenderer13,
+      [
+        { lat: 51.894925924954144, lng: 17.78119986534384 },
+        { lat: 51.84074253488349, lng: 17.93829407072576 },
+        { lat: 51.88382226754961, lng: 17.788427096496257 },
+        { lat: 51.88369979526238, lng: 17.7912238733486 },
+        { lat: 51.88622600089567, lng: 17.798953806347253 },
+      ],
+      13
+    );
   });
 
   const marker1 = new google.maps.Marker({
@@ -3540,6 +3632,149 @@ function calculateRoute(
           })
           .then((response) => {
             flag10 = false;
+            directionsRenderer.setDirections(response);
+          })
+          .catch((e) => {
+            window.alert("Directions request failed due to ");
+          });
+      }
+      break;
+
+    case 11:
+      if (flag11 == false) {
+        directionsRenderer.set("directions", null);
+        flag11 = true;
+      } else if (flag11 == true) {
+        directionsService
+          .route({
+            origin: {
+              lat: originDestinationArray[0].lat,
+              lng: originDestinationArray[0].lng,
+            },
+            destination: {
+              lat: originDestinationArray[1].lat,
+              lng: originDestinationArray[1].lng,
+            },
+            waypoints: [
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[2].lat,
+                  originDestinationArray[2].lng
+                ),
+                stopover: false,
+              },
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[3].lat,
+                  originDestinationArray[3].lng
+                ),
+                stopover: false,
+              },
+            ],
+            travelMode: google.maps.DirectionsTravelMode.WALKING,
+          })
+          .then((response) => {
+            flag11 = false;
+            directionsRenderer.setDirections(response);
+          })
+          .catch((e) => {
+            window.alert("Directions request failed due to ");
+          });
+      }
+      break;
+
+    case 12:
+      if (flag12 == false) {
+        directionsRenderer.set("directions", null);
+        flag12 = true;
+      } else if (flag12 == true) {
+        directionsService
+          .route({
+            origin: {
+              lat: originDestinationArray[0].lat,
+              lng: originDestinationArray[0].lng,
+            },
+            destination: {
+              lat: originDestinationArray[1].lat,
+              lng: originDestinationArray[1].lng,
+            },
+            waypoints: [
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[2].lat,
+                  originDestinationArray[2].lng
+                ),
+                stopover: false,
+              },
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[3].lat,
+                  originDestinationArray[3].lng
+                ),
+                stopover: false,
+              },
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[4].lat,
+                  originDestinationArray[4].lng
+                ),
+                stopover: false,
+              },
+            ],
+            travelMode: google.maps.DirectionsTravelMode.WALKING,
+          })
+          .then((response) => {
+            flag12 = false;
+            directionsRenderer.setDirections(response);
+          })
+          .catch((e) => {
+            window.alert("Directions request failed due to ");
+          });
+      }
+      break;
+
+    case 13:
+      if (flag13 == false) {
+        directionsRenderer.set("directions", null);
+        flag13 = true;
+      } else if (flag13 == true) {
+        directionsService
+          .route({
+            origin: {
+              lat: originDestinationArray[0].lat,
+              lng: originDestinationArray[0].lng,
+            },
+            destination: {
+              lat: originDestinationArray[1].lat,
+              lng: originDestinationArray[1].lng,
+            },
+            waypoints: [
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[2].lat,
+                  originDestinationArray[2].lng
+                ),
+                stopover: false,
+              },
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[3].lat,
+                  originDestinationArray[3].lng
+                ),
+                stopover: false,
+              },
+              {
+                location: new google.maps.LatLng(
+                  originDestinationArray[4].lat,
+                  originDestinationArray[4].lng
+                ),
+                stopover: false,
+              },
+            ],
+            travelMode: google.maps.DirectionsTravelMode.WALKING,
+          })
+          .then((response) => {
+            flag13 = false;
             directionsRenderer.setDirections(response);
           })
           .catch((e) => {
