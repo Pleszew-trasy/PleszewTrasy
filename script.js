@@ -252,6 +252,7 @@ function initMap() {
   directionsRenderer11.setMap(map);
   directionsRenderer12.setMap(map);
   directionsRenderer13.setMap(map);
+
   //calculateRoute(directionsService, directionsRenderer);
 
   const onChangeHandler = function (
